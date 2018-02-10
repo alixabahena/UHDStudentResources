@@ -1,0 +1,39 @@
+PODS:
+  - FeedKit (7.0.1)
+  - FrostedSidebar (1.0.0)
+  - JTAppleCalendar (7.1.5)
+  - JTImageButton (1.0.3)
+  - Jupiter (0.0.2):
+    - Jupiter/Core (= 0.0.2)
+    - Unbox (~> 2.3)
+  - Jupiter/Core (0.0.2):
+    - Unbox (~> 2.3)
+  - LUExpandableTableView (3.0.0)
+  - Mapbox-iOS-SDK (3.7.3)
+  - SideMenu (3.1.5)
+  - Unbox (2.5.0)
+
+DEPENDENCIES:
+  - FeedKit
+  - FrostedSidebar
+  - JTAppleCalendar
+  - JTImageButton
+  - Jupiter
+  - LUExpandableTableView
+  - Mapbox-iOS-SDK
+  - SideMenu
+
+SPEC CHECKSUMS:
+  FeedKit: 9be69ab57ef0eb922ee4b6c31cb6b8840a5bbb29
+  FrostedSidebar: f86c6843cabd5d456f9234afb6eea22a7512532f
+  JTAppleCalendar: 2d4f974f9f3c8b4964d51ca1f6e004883c031fbe
+  JTImageButton: 1b5cb0f731a9c06cdd0516d593f378dcfd233c91
+  Jupiter: 72b505f39dd2f9ba0674e62500825d6028f85115
+  LUExpandableTableView: 3282bf2de40af3fadd97095f9a4738185a261d6f
+  Mapbox-iOS-SDK: 5304bd9605babe6da9050ea4cb23c1671420b737
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+
+PODFILE CHECKSUM: 27fb8b8843fb1add8bc14e64db28f73166413eb1
+
+COCOAPODS: 1.4.0

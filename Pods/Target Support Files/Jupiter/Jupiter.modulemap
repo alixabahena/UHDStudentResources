@@ -1,0 +1,6 @@
+framework module Jupiter {
+  umbrella header "Jupiter-umbrella.h"
+
+  export *
+  module * { export * }
+}

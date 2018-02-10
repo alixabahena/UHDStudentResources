@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  UHDStudentResources
+//  SideBarTest
 //
-//  Created by Alixa Bahena on 2/9/18.
+//  Created by Alixa Bahena on 1/29/18.
 //  Copyright © 2018 Alixa Bahena. All rights reserved.
 //
 
