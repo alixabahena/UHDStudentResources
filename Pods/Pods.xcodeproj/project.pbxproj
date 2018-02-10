@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -287,10 +287,10 @@
 		07AC94F0E522DF9C19E0D47E40FD1FEF /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
 		07E96583A9894E62747D4CC418E2A29E /* Pods-UHDStudentResources.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHDStudentResources.debug.xcconfig"; sourceTree = "<group>"; };
 		083526CF80B1C248D792E0D081B31ADB /* MediaSubTitle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaSubTitle.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaSubTitle.swift; sourceTree = "<group>"; };
-		086FE4762757DEFD0B4A07982D9221F3 /* LUExpandableTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LUExpandableTableView.modulemap; sourceTree = "<group>"; };
+		086FE4762757DEFD0B4A07982D9221F3 /* LUExpandableTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LUExpandableTableView.modulemap; sourceTree = "<group>"; };
 		0ACBEDFBB8FC959528650BD64733929B /* FrostedSidebar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrostedSidebar-umbrella.h"; sourceTree = "<group>"; };
 		0B1A86CA3C92E65275428B0313E57856 /* UnboxableByTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxableByTransform.swift; path = Sources/UnboxableByTransform.swift; sourceTree = "<group>"; };
-		0E336148FD94B68CC614D56A86D22890 /* JTImageButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTImageButton.framework; path = JTImageButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E336148FD94B68CC614D56A86D22890 /* JTImageButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTImageButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5569E63A739CEC82C0FFC2CCF75CA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		0E994B1EE5BE7045BBE591A6FBC0672E /* Pods-UHDStudentResources-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UHDStudentResources-dummy.m"; sourceTree = "<group>"; };
 		0EA6676EAAF74CD326B30E1CA607F951 /* JTImageButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTImageButton-dummy.m"; sourceTree = "<group>"; };
@@ -302,15 +302,15 @@
 		117C3E8CABE8BD0BE855889C61BB262D /* Optional+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Unbox.swift"; path = "Sources/Optional+Unbox.swift"; sourceTree = "<group>"; };
 		12EC406562158DC51BEA5527715ED31E /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
 		1347365C9C2A029063EC63463F1DE245 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		16019E68348D937D7DC732B49E177B8C /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeedKit.framework; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16019E68348D937D7DC732B49E177B8C /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D713931827A84B0CBF25B40479D2D0 /* RSSFeedItemSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedItemSource.swift; path = Sources/FeedKit/Models/RSS/RSSFeedItemSource.swift; sourceTree = "<group>"; };
 		17B5A2CEADF329507BC6F37D02BADF88 /* LUExpandableTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LUExpandableTableView-dummy.m"; sourceTree = "<group>"; };
 		193886C1EB1FD1F64AFAFCD269DB88A3 /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
 		1B03F5713438F408BCDC1356C0A20C54 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
 		1B55307B94558815AB676952C0B19D48 /* MediaPeerLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaPeerLink.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaPeerLink.swift; sourceTree = "<group>"; };
 		1BD9E5747CE7A3A5D594DD2D115FC8C5 /* AtomFeedContributor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedContributor.swift; path = Sources/FeedKit/Models/Atom/AtomFeedContributor.swift; sourceTree = "<group>"; };
-		1CD20454F91344F3CCF9F23F7EAADECD /* Pods_UHDStudentResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UHDStudentResources.framework; path = "Pods-UHDStudentResources.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2031401CFE7E587F60EC32888A466F75 /* Pods-UHDStudentResourcesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UHDStudentResourcesTests.modulemap"; sourceTree = "<group>"; };
+		1CD20454F91344F3CCF9F23F7EAADECD /* Pods_UHDStudentResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2031401CFE7E587F60EC32888A466F75 /* Pods-UHDStudentResourcesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UHDStudentResourcesTests.modulemap"; sourceTree = "<group>"; };
 		20EA82707959828CEF7DBBEE5F12FF05 /* iTunesOwner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iTunesOwner.swift; path = Sources/FeedKit/Models/Namespaces/iTunes/iTunesOwner.swift; sourceTree = "<group>"; };
 		2156E8B8E19266EDB35D010824C6D295 /* Bool+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+Unbox.swift"; path = "Sources/Bool+Unbox.swift"; sourceTree = "<group>"; };
 		24DB020187DEFE5738980366A4E65BD6 /* InternalActionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalActionFunctions.swift; path = Sources/InternalActionFunctions.swift; sourceTree = "<group>"; };
@@ -355,9 +355,9 @@
 		46400574D2397CB0281CB75C0C5C9BEB /* RSSFeedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedImage.swift; path = Sources/FeedKit/Models/RSS/RSSFeedImage.swift; sourceTree = "<group>"; };
 		46EA83995BF20C90B0B22CD62DF31F31 /* DublinCoreNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DublinCoreNamespace.swift; path = "Sources/FeedKit/Models/Namespaces/Dublin Core/DublinCoreNamespace.swift"; sourceTree = "<group>"; };
 		4A4E3B4227C5DE35DB67A11DD6B5EE00 /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
-		4AEFBEEA3F8049E90F13151221CD422A /* Pods_UHDStudentResourcesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UHDStudentResourcesUITests.framework; path = "Pods-UHDStudentResourcesUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AEFBEEA3F8049E90F13151221CD422A /* Pods_UHDStudentResourcesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResourcesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEDFB5E255D8E5061E286610E2BA686 /* UnboxableWithContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxableWithContext.swift; path = Sources/UnboxableWithContext.swift; sourceTree = "<group>"; };
-		4C95D55346E5B931DF9CD4F9D6255645 /* Jupiter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Jupiter.modulemap; sourceTree = "<group>"; };
+		4C95D55346E5B931DF9CD4F9D6255645 /* Jupiter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Jupiter.modulemap; sourceTree = "<group>"; };
 		4D51D57A2166EDC3EF94CA4CA70F55FD /* UnboxContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxContainer.swift; path = Sources/UnboxContainer.swift; sourceTree = "<group>"; };
 		4DC169D7AB706A189455F56FE8CAD32D /* RFC822DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RFC822DateFormatter.swift; path = Sources/FeedKit/Dates/RFC822DateFormatter.swift; sourceTree = "<group>"; };
 		4E37270644439A5491525B715B8A7808 /* Pods-UHDStudentResources-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UHDStudentResources-umbrella.h"; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 		5224793B7E840C50904F220C7BA11E47 /* Sequence+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Sequence+Unbox.swift"; path = "Sources/Sequence+Unbox.swift"; sourceTree = "<group>"; };
 		53294117744A125B7A843846695C3027 /* AtomFeedGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeedGenerator.swift; path = Sources/FeedKit/Models/Atom/AtomFeedGenerator.swift; sourceTree = "<group>"; };
 		54F3918F8F243A587D3176CB0BAB06E2 /* Unboxer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unboxer.swift; path = Sources/Unboxer.swift; sourceTree = "<group>"; };
-		5558B63840FE981C3C5F23B881D5AE67 /* FrostedSidebar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FrostedSidebar.framework; path = FrostedSidebar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5558B63840FE981C3C5F23B881D5AE67 /* FrostedSidebar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrostedSidebar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		559489F58A5E7EF6A712C8C0C497F890 /* Int64+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int64+Unbox.swift"; path = "Sources/Int64+Unbox.swift"; sourceTree = "<group>"; };
 		57926A301E6AFECD00020FCD94D67BC7 /* UnboxCollectionElementTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxCollectionElementTransformer.swift; path = Sources/UnboxCollectionElementTransformer.swift; sourceTree = "<group>"; };
 		58516ED5EC508A5DD3BEB3D571EDF93C /* CGFloat+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Unbox.swift"; path = "Sources/CGFloat+Unbox.swift"; sourceTree = "<group>"; };
@@ -402,7 +402,7 @@
 		77D50A29F18FAC8ADF5EE850D1EAF116 /* RSSFeedCloud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedCloud.swift; path = Sources/FeedKit/Models/RSS/RSSFeedCloud.swift; sourceTree = "<group>"; };
 		78E304C1B835882B3426BC1C58085B21 /* UnboxPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxPath.swift; path = Sources/UnboxPath.swift; sourceTree = "<group>"; };
 		791BD236F21E72E042B2460C6FAE5A30 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		7A081655B96BF7E5D212009CE0D9E7EC /* Unbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Unbox.modulemap; sourceTree = "<group>"; };
+		7A081655B96BF7E5D212009CE0D9E7EC /* Unbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Unbox.modulemap; sourceTree = "<group>"; };
 		7ACC0C6B5868121B6102D6EC8DBE6F3B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/FeedKit/Parser/Result.swift; sourceTree = "<group>"; };
 		7D4BBCECCBC02AD09317BEFACAEBB2C0 /* Pods-UHDStudentResources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHDStudentResources.release.xcconfig"; sourceTree = "<group>"; };
 		80EE8C86DCE371A705227E764CCC6454 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -425,13 +425,13 @@
 		8FA7C2D28C4E276179FD2A0D02DEEE3B /* AtomFeed + mapAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AtomFeed + mapAttributes.swift"; path = "Sources/FeedKit/Models/Atom/AtomFeed + mapAttributes.swift"; sourceTree = "<group>"; };
 		92E893DDB7AAFEB058B0FF032D398CC2 /* FeedParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedParser.swift; path = Sources/FeedKit/Parser/FeedParser.swift; sourceTree = "<group>"; };
 		93426412EE0B8B0EB3643F54EE7F4866 /* Dictionary+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Unbox.swift"; path = "Sources/Dictionary+Unbox.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		946E988F4212D36B53B031980FE48F7C /* LUExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LUExpandableTableView.framework; path = LUExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		946E988F4212D36B53B031980FE48F7C /* LUExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LUExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9527A76C4A9087AE156DD80BBC9BF49B /* RSSFeedSkipDay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSFeedSkipDay.swift; path = Sources/FeedKit/Models/RSS/RSSFeedSkipDay.swift; sourceTree = "<group>"; };
 		957B55BF369933C9472D993A35697CF0 /* XMLFeedParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLFeedParser.swift; path = Sources/FeedKit/Parser/XMLFeedParser.swift; sourceTree = "<group>"; };
 		95B430CB602DB370E8D482BB4857E9A0 /* String+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Unbox.swift"; path = "Sources/String+Unbox.swift"; sourceTree = "<group>"; };
 		983551FD65116C26A7CEA993C70A1432 /* UnboxArrayContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxArrayContainer.swift; path = Sources/UnboxArrayContainer.swift; sourceTree = "<group>"; };
-		985B886882749F932D88A217AA8A02EE /* Pods-UHDStudentResourcesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UHDStudentResourcesUITests.modulemap"; sourceTree = "<group>"; };
+		985B886882749F932D88A217AA8A02EE /* Pods-UHDStudentResourcesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UHDStudentResourcesUITests.modulemap"; sourceTree = "<group>"; };
 		99B7CFBCE6BF9FCFA31EC87933FF3DF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A638786C56AFEB798CA5BA9B78AA1CA /* JSONFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONFeed.swift; path = Sources/FeedKit/Models/JSON/JSONFeed.swift; sourceTree = "<group>"; };
 		9ABC84EAF3CB53982E665E3FB3F11A8E /* Pods-UHDStudentResourcesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UHDStudentResourcesUITests-frameworks.sh"; sourceTree = "<group>"; };
@@ -448,7 +448,7 @@
 		A2213422122EA81428F61C178D9B1C2F /* Pods-UHDStudentResources-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UHDStudentResources-resources.sh"; sourceTree = "<group>"; };
 		A39B93A0BE02851DC3F34C9BDC6279B7 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
 		A55563481C34D7BA2660263D1CF4674D /* Set+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Set+Unbox.swift"; path = "Sources/Set+Unbox.swift"; sourceTree = "<group>"; };
-		A5C1C4F5FD9F68064A4D76F2FE5B0883 /* FeedKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FeedKit.modulemap; sourceTree = "<group>"; };
+		A5C1C4F5FD9F68064A4D76F2FE5B0883 /* FeedKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FeedKit.modulemap; sourceTree = "<group>"; };
 		A5CF1D535CBD8D4E346D8E24F8C22661 /* Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unbox.swift; path = Sources/Unbox.swift; sourceTree = "<group>"; };
 		A61FACB26BA8FC76B5818E4C9A8E0F98 /* FeedKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeedKit.xcconfig; sourceTree = "<group>"; };
 		A754ED10C039FDB93BD8DB12ED331D8E /* iTunesSubCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iTunesSubCategory.swift; path = Sources/FeedKit/Models/Namespaces/iTunes/iTunesSubCategory.swift; sourceTree = "<group>"; };
@@ -457,12 +457,12 @@
 		A8F5C459F0D3EE7646E4BA9B0D781591 /* MediaCommunity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaCommunity.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaCommunity.swift; sourceTree = "<group>"; };
 		A932A455F0DFD76D408C3DFE1B291FE3 /* LUExpandableTableViewSectionHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LUExpandableTableViewSectionHeader.swift; path = Sources/LUExpandableTableViewSectionHeader.swift; sourceTree = "<group>"; };
 		A97DBE6C138420F90D414EEB11DDFBE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9CA128DDADE2DE07A1A9CB344B4E054 /* Pods-UHDStudentResources.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UHDStudentResources.modulemap"; sourceTree = "<group>"; };
+		A9CA128DDADE2DE07A1A9CB344B4E054 /* Pods-UHDStudentResources.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UHDStudentResources.modulemap"; sourceTree = "<group>"; };
 		A9CAF7F6D22DAD3798D34117EA579E6A /* RFC3339DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RFC3339DateFormatter.swift; path = Sources/FeedKit/Dates/RFC3339DateFormatter.swift; sourceTree = "<group>"; };
 		AC70FFFFECFF233F0169A7229895DA61 /* XMLFeedType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XMLFeedType.swift; path = Sources/FeedKit/Parser/XMLFeedType.swift; sourceTree = "<group>"; };
 		AD28090EC9AE76B89B8AEEAB064C8F39 /* AtomFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomFeed.swift; path = Sources/FeedKit/Models/Atom/AtomFeed.swift; sourceTree = "<group>"; };
 		AE4671E16A6C99705838E2875B78B7EE /* Data+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Unbox.swift"; path = "Sources/Data+Unbox.swift"; sourceTree = "<group>"; };
-		B0124D321A04975A00D5A1BAD6441BEA /* Pods_UHDStudentResourcesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UHDStudentResourcesTests.framework; path = "Pods-UHDStudentResourcesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0124D321A04975A00D5A1BAD6441BEA /* Pods_UHDStudentResourcesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResourcesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283D67DF90217837EE35AB20297E8E2 /* FrostedSidebar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FrostedSidebar-prefix.pch"; sourceTree = "<group>"; };
 		B3FE8F5BF6E0B26CEE1D8CE480A5DCDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F57E10CB5091ED52D7BB996BCF0B34 /* Jupiter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Jupiter-prefix.pch"; sourceTree = "<group>"; };
@@ -477,13 +477,13 @@
 		C126593595712D840A3E5D1A9AE544E2 /* JSONFeedAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONFeedAttachment.swift; path = Sources/FeedKit/Models/JSON/JSONFeedAttachment.swift; sourceTree = "<group>"; };
 		C12B1ABB242ADB25AEF2785084F96044 /* JSONSerialization+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JSONSerialization+Unbox.swift"; path = "Sources/JSONSerialization+Unbox.swift"; sourceTree = "<group>"; };
 		C5264CC9D55FE2D33501609A9237F5AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5A13B42112BCFCA2EFEB96C8AEAD59E /* Unbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Unbox.framework; path = Unbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A13B42112BCFCA2EFEB96C8AEAD59E /* Unbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Unbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DD3B002239EF8AB04871964988EA11 /* NSArray+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSArray+Unbox.swift"; path = "Sources/NSArray+Unbox.swift"; sourceTree = "<group>"; };
 		C62DD46285C680754FBA5D71C9147382 /* Pods-UHDStudentResourcesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UHDStudentResourcesUITests-umbrella.h"; sourceTree = "<group>"; };
 		C88BFBF863E84E98078A1DF20C9284C2 /* Pods-UHDStudentResourcesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UHDStudentResourcesTests-resources.sh"; sourceTree = "<group>"; };
 		C93CC80CD685CEAC9C4DBDA68653F8C8 /* ParserError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParserError.swift; path = Sources/FeedKit/Parser/ParserError.swift; sourceTree = "<group>"; };
 		C97F61894C34ECBE3707383C383C6E67 /* DarkSkyAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyAPI.swift; path = Sources/DarkSkyAPI.swift; sourceTree = "<group>"; };
-		C99E454673E5908A0B5974E880B526F7 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		C99E454673E5908A0B5974E880B526F7 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		CAA3BE6D4DB74BDB1C6BA42FAFCAF68A /* MediaPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaPlayer.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaPlayer.swift; sourceTree = "<group>"; };
 		CAFF80FCBE0998F63E8A359D495B4FF1 /* JTImageButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTImageButton.xcconfig; sourceTree = "<group>"; };
 		CDADBF25762A7A232D7758E19D48A2C3 /* iTunesNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iTunesNamespace.swift; path = Sources/FeedKit/Models/Namespaces/iTunes/iTunesNamespace.swift; sourceTree = "<group>"; };
@@ -494,9 +494,9 @@
 		D125DA9C88BFFFCE002B935127FC4C35 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		D66BBCA8423525ABC40EFBE836CF9BD2 /* FrostedSidebar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FrostedSidebar-dummy.m"; sourceTree = "<group>"; };
 		D73AE5C7BB68C138FFA78A7AA6B72FFD /* AtomPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomPath.swift; path = Sources/FeedKit/Models/Atom/AtomPath.swift; sourceTree = "<group>"; };
-		D78505C94AAB73F1B78458E14805457E /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		D78505C94AAB73F1B78458E14805457E /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
 		D7942944933CB74E62C7471501892C0C /* Pods-UHDStudentResourcesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UHDStudentResourcesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D795841259B87E5CAC142A042BB84A61 /* Jupiter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Jupiter.framework; path = Jupiter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D795841259B87E5CAC142A042BB84A61 /* Jupiter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jupiter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D297844CD56D136527A2403E7710E2 /* Array + Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array + Equatable.swift"; path = "Sources/FeedKit/Extensions/Array + Equatable.swift"; sourceTree = "<group>"; };
 		DB2EEBC63D63A333157C75BDAEBE018A /* SyndicationNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyndicationNamespace.swift; path = Sources/FeedKit/Models/Namespaces/Syndication/SyndicationNamespace.swift; sourceTree = "<group>"; };
 		DBA50835E386F838E7AFED772BA5C1A4 /* LUExpandableTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LUExpandableTableViewDataSource.swift; path = Sources/LUExpandableTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -508,9 +508,9 @@
 		E2054F250069E8091208AB6CF0D0BEB7 /* MediaThumbnail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaThumbnail.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaThumbnail.swift; sourceTree = "<group>"; };
 		E28A12D5DCC5DC4AAB0C83ADFD85CADA /* UInt32+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Unbox.swift"; path = "Sources/UInt32+Unbox.swift"; sourceTree = "<group>"; };
 		E4560A5B59F0652F9EE57EE544ED2F96 /* MediaLicence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaLicence.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaLicence.swift; sourceTree = "<group>"; };
-		E5BF56CE7CC709DB826412454621DF2B /* JTImageButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JTImageButton.modulemap; sourceTree = "<group>"; };
+		E5BF56CE7CC709DB826412454621DF2B /* JTImageButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTImageButton.modulemap; sourceTree = "<group>"; };
 		E7E91CED2A5546384097D9D94EB24D33 /* LUExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LUExpandableTableViewDelegate.swift; path = Sources/LUExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
-		E8090B5236D37043FF07612647544708 /* FrostedSidebar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FrostedSidebar.modulemap; sourceTree = "<group>"; };
+		E8090B5236D37043FF07612647544708 /* FrostedSidebar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FrostedSidebar.modulemap; sourceTree = "<group>"; };
 		E86980ABBDA48284B5CEE7CA3928210C /* FeedParserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedParserProtocol.swift; path = Sources/FeedKit/Parser/FeedParserProtocol.swift; sourceTree = "<group>"; };
 		E9AB0E32688098B690DEC82D8AD9E350 /* UnboxCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxCompatible.swift; path = Sources/UnboxCompatible.swift; sourceTree = "<group>"; };
 		EA8FFBCDC52BD6CEE7B5DCAE79865295 /* Pods-UHDStudentResourcesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UHDStudentResourcesUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -528,11 +528,11 @@
 		F4E1E51DF98E4A69FA7A655503A76FB5 /* Double+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Unbox.swift"; path = "Sources/Double+Unbox.swift"; sourceTree = "<group>"; };
 		F52B5EC8628B2B9B86D00FDDF96AA68E /* URL+Unbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Unbox.swift"; path = "Sources/URL+Unbox.swift"; sourceTree = "<group>"; };
 		F5E53BA1F9B03C49C89572E453142D0D /* MediaCopyright.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaCopyright.swift; path = Sources/FeedKit/Models/Namespaces/Media/MediaCopyright.swift; sourceTree = "<group>"; };
-		F6867AF203D25B1F076342094EDDEF0F /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6867AF203D25B1F076342094EDDEF0F /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69B7263B90F66B88507CF1EE84A06C4 /* ContentNamespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentNamespace.swift; path = Sources/FeedKit/Models/Namespaces/Content/ContentNamespace.swift; sourceTree = "<group>"; };
 		F901FD1C343ABD08462789B304A0A368 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		F937A5C40D07DD143ED64D80F7F93024 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
-		FA05A0E5C2E5D854E26AE59243F2A709 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05A0E5C2E5D854E26AE59243F2A709 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC1810DEB5081886162A061F75BC2DF /* ISO8601DateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateFormatter.swift; path = Sources/FeedKit/Dates/ISO8601DateFormatter.swift; sourceTree = "<group>"; };
 		FE23322928AEA1231276AE0C8D235138 /* UnboxPathError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnboxPathError.swift; path = Sources/UnboxPathError.swift; sourceTree = "<group>"; };
 		FE3341ACC95F344CC4CA1BB16DC161D8 /* FrostedSidebar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrostedSidebar.swift; path = FrostedSidebar/FrostedSidebar.swift; sourceTree = "<group>"; };
@@ -641,7 +641,6 @@
 				8B1AC088D9F45C89BC1D82C549CD340C /* JTImageButton.m */,
 				F7B2D5A8D9AB8B61BBC60FF83BEE7754 /* Support Files */,
 			);
-			name = JTImageButton;
 			path = JTImageButton;
 			sourceTree = "<group>";
 		};
@@ -666,7 +665,6 @@
 				3B195F87E6B222F3A698CC39D53C2A46 /* UserInteractionFunctions.swift */,
 				4598F40BF301FA00453272E7BC995234 /* Support Files */,
 			);
-			name = JTAppleCalendar;
 			path = JTAppleCalendar;
 			sourceTree = "<group>";
 		};
@@ -731,7 +729,6 @@
 				F52B5EC8628B2B9B86D00FDDF96AA68E /* URL+Unbox.swift */,
 				E6D90BB9FFDF1AEC8B6FA215985632DE /* Support Files */,
 			);
-			name = Unbox;
 			path = Unbox;
 			sourceTree = "<group>";
 		};
@@ -744,7 +741,6 @@
 				755A7088AC71329F78C69790146AFA77 /* UITableViewVibrantCell.swift */,
 				CC871D6DB8EDD67C2DD4CAC422627E57 /* Support Files */,
 			);
-			name = SideMenu;
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
@@ -773,7 +769,6 @@
 				FE3341ACC95F344CC4CA1BB16DC161D8 /* FrostedSidebar.swift */,
 				D1445F98B14AE4348019C63A2B578715 /* Support Files */,
 			);
-			name = FrostedSidebar;
 			path = FrostedSidebar;
 			sourceTree = "<group>";
 		};
@@ -869,7 +864,6 @@
 				362C10D20A091100108433EDFE461285 /* Core */,
 				69C43560E04BACB1D5F8787C9E63BFB2 /* Support Files */,
 			);
-			name = Jupiter;
 			path = Jupiter;
 			sourceTree = "<group>";
 		};
@@ -990,7 +984,6 @@
 			children = (
 				9DB52F91353A6EFB6DB37599FFD0AA48 /* Frameworks */,
 			);
-			name = "Mapbox-iOS-SDK";
 			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
@@ -1003,7 +996,6 @@
 				A932A455F0DFD76D408C3DFE1B291FE3 /* LUExpandableTableViewSectionHeader.swift */,
 				CC594D8CEDE0997C2310475D02872DE4 /* Support Files */,
 			);
-			name = LUExpandableTableView;
 			path = LUExpandableTableView;
 			sourceTree = "<group>";
 		};
@@ -1118,7 +1110,6 @@
 				AC70FFFFECFF233F0169A7229895DA61 /* XMLFeedType.swift */,
 				182D9D26D4C7A8291D4EF73259DFBB2F /* Support Files */,
 			);
-			name = FeedKit;
 			path = FeedKit;
 			sourceTree = "<group>";
 		};
@@ -1434,7 +1425,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2265,6 +2256,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
