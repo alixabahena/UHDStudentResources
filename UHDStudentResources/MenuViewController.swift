@@ -49,7 +49,7 @@ class MenuViewController: UIViewController {
         self.homeButton.borderWidth = 0.0
         
         //Schedule Button
-        _ = [self.scheduleButton .createTitle("E-Services", withIcon: #imageLiteral(resourceName: "schedule"), font: UIFont(name: "Futura-Medium", size: 18), iconHeight: JTImageButtonIconHeightDefault, iconOffsetY: 3.0)]
+        _ = [self.scheduleButton .createTitle("MyUHD", withIcon: #imageLiteral(resourceName: "schedule"), font: UIFont(name: "Futura-Medium", size: 18), iconHeight: JTImageButtonIconHeightDefault, iconOffsetY: 3.0)]
         self.scheduleButton.iconColor = UIColor(named: "UHDBlue")
         self.scheduleButton.titleColor = UIColor(named: "UHDBlue")
         self.scheduleButton.padding = JTImageButtonPaddingMedium

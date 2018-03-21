@@ -8,24 +8,103 @@
 
 import UIKit
 import JTAppleCalendar
+import FeedKit
+import NVActivityIndicatorView
 
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NVActivityIndicatorViewable {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var year: UILabel!
-    
+    @IBOutlet weak var tableView: UITableView!
+
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+   
+    let calendar = Calendar.current
+    var selectedDate = Date()
     let todaysDate = Date()
     let formatter = DateFormatter()
+    
+  
+    var events = [CalendarEvents]()
+    var todaysEvents = [CalendarEvents]()
+    
+    func dayEvents()
+    {
+        
+        
+        todaysEvents = events.filter{calendar.isDate(($0.pubDate as Date), inSameDayAs: selectedDate)}
+    }
+  
+    
+    override func viewWillAppear(_ animated: Bool) {
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCalendarView()
-        
+
         calendarView.scrollToDate(Date(), animateScroll: false)
         calendarView.selectDates([ Date() ])
         
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = 45
+        tableView.estimatedRowHeight = 45
+        tableView.tableFooterView = UIView(frame: .zero)
+        let size = CGSize(width: 30, height: 30)
+        
+        startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
+        
+        DispatchQueue.global(qos: .background).async {
+//            self.events = self.delegate.events
+            let otherVC = EventStore()
+            otherVC.populateEvents()
+            self.events = otherVC.allEvents
+            self.dayEvents()
+            
+            DispatchQueue.main.async {
+                print("calendar view")
+                print(self.events.count)
+                self.stopAnimating()
+                self.tableView.reloadData()
+            }
+        }
+        
     }
+    
+   
+    
+     func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todaysEvents.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! eventCell
+        
+            cell.prepareForReuse()
+        
+
+                dayEvents()
+        if(todaysEvents.count != 0)
+        {
+                cell.titleLabel.text = todaysEvents[indexPath.row].title
+                formatter.dateFormat = "EEEE, MMMM d, yyyy h:mm a"
+                let eventDate = formatter.string(from: todaysEvents[indexPath.row].pubDate)
+                cell.dateLabel.text = eventDate
+        
+        }
+            return cell
+    }
+    
+    
     
     func setupCalendarView() {
         calendarView.minimumLineSpacing = 0
@@ -34,6 +113,8 @@ class CalendarViewController: UIViewController {
         calendarView.visibleDates { (visibleDates) in
           self.setupViewsOfCalendar(from: visibleDates)
         }
+        
+
     }
     
     func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
@@ -65,12 +146,15 @@ class CalendarViewController: UIViewController {
         guard let validCell = view as? CustomCell else { return }
         if validCell.isSelected {
             validCell.selectedView.isHidden = false
+            
+            
         } else {
             validCell.selectedView.isHidden = true
         }
     }
     
     func handleCellEvents(view: JTAppleCell?, cellState: CellState) {
+        
         
     }
     
@@ -89,6 +173,9 @@ class CalendarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+
+
 extension CalendarViewController: JTAppleCalendarViewDataSource {
 
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
@@ -121,9 +208,12 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        selectedDate = date
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
         cell?.bounce()
+        dayEvents()
+        tableView.reloadData()
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
@@ -150,3 +240,4 @@ extension UIView {
         })
     }
 }
+

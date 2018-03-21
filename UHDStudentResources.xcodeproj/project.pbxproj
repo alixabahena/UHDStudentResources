@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5502E8CD20472177005F039D /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CC20472177005F039D /* CampusMapView.swift */; };
+		5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CE204726AF005F039D /* RoundedButton.swift */; };
+		55BBF46A205EE568003669E0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF469205EE568003669E0 /* EventStore.swift */; };
 		55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFA9202E8731009290ED /* AppDelegate.swift */; };
 		55C6BFAC202E8731009290ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFAB202E8731009290ED /* ViewController.swift */; };
 		55C6BFAF202E8731009290ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFAD202E8731009290ED /* Main.storyboard */; };
@@ -23,6 +26,8 @@
 		55C6BFE6202EA1AE009290ED /* Climacons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFDD202EA1AD009290ED /* Climacons.ttf */; };
 		55C6BFE7202EA1AE009290ED /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFDE202EA1AE009290ED /* MenuViewController.swift */; };
 		55C6BFE8202EA1AE009290ED /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFDF202EA1AE009290ED /* Base.lproj */; };
+		55C6BFEA202FD761009290ED /* CalendarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFE9202FD760009290ED /* CalendarEvents.swift */; };
+		55C6BFEC20321BA1009290ED /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFEB20321BA1009290ED /* eventCell.swift */; };
 		5CD9CEEA5FE7F0FF5AFDAC7E /* Pods_UHDStudentResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A9C3280482FAB665C6823 /* Pods_UHDStudentResources.framework */; };
 		EB95CDF16F0F4FE4723DF565 /* Pods_UHDStudentResourcesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8E8812A8BC720C0AD1A0AA /* Pods_UHDStudentResourcesUITests.framework */; };
 		F13BEFF7F1CD0814B3F86D06 /* Pods_UHDStudentResourcesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6286B459330E5A5F9F6F49E /* Pods_UHDStudentResourcesTests.framework */; };
@@ -48,6 +53,9 @@
 /* Begin PBXFileReference section */
 		136657446EEC71F8573BC6F6 /* Pods-UHDStudentResourcesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHDStudentResourcesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UHDStudentResourcesTests/Pods-UHDStudentResourcesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A8E8812A8BC720C0AD1A0AA /* Pods_UHDStudentResourcesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResourcesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5502E8CC20472177005F039D /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
+		5502E8CE204726AF005F039D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		55BBF469205EE568003669E0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		55C6BFA6202E8731009290ED /* UHDStudentResources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UHDStudentResources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C6BFA9202E8731009290ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C6BFAB202E8731009290ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 		55C6BFDD202EA1AD009290ED /* Climacons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Climacons.ttf; sourceTree = "<group>"; };
 		55C6BFDE202EA1AE009290ED /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		55C6BFDF202EA1AE009290ED /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		55C6BFE9202FD760009290ED /* CalendarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvents.swift; sourceTree = "<group>"; };
+		55C6BFEB20321BA1009290ED /* eventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCell.swift; sourceTree = "<group>"; };
 		6E1A9C3280482FAB665C6823 /* Pods_UHDStudentResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B40A195B79D900BBE4BFDC /* Pods-UHDStudentResources.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHDStudentResources.release.xcconfig"; path = "Pods/Target Support Files/Pods-UHDStudentResources/Pods-UHDStudentResources.release.xcconfig"; sourceTree = "<group>"; };
 		B4E9EC7BACF0654AB5E8FD4F /* Pods-UHDStudentResourcesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHDStudentResourcesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UHDStudentResourcesUITests/Pods-UHDStudentResourcesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +146,10 @@
 				55C6BFDF202EA1AE009290ED /* Base.lproj */,
 				55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */,
 				55C6BFDC202EA1AD009290ED /* CalendarViewController.swift */,
+				55C6BFE9202FD760009290ED /* CalendarEvents.swift */,
+				55BBF469205EE568003669E0 /* EventStore.swift */,
 				55C6BFDD202EA1AD009290ED /* Climacons.ttf */,
+				55C6BFEB20321BA1009290ED /* eventCell.swift */,
 				55C6BFD8202EA1AD009290ED /* CustomCell.swift */,
 				55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */,
 				55C6BFD7202EA1AD009290ED /* Image.imageset */,
@@ -147,6 +160,8 @@
 				55C6BFB0202E8731009290ED /* Assets.xcassets */,
 				55C6BFB2202E8731009290ED /* LaunchScreen.storyboard */,
 				55C6BFB5202E8731009290ED /* Info.plist */,
+				5502E8CC20472177005F039D /* CampusMapView.swift */,
+				5502E8CE204726AF005F039D /* RoundedButton.swift */,
 			);
 			path = UHDStudentResources;
 			sourceTree = "<group>";
@@ -413,6 +428,7 @@
 				"${BUILT_PRODUCTS_DIR}/LUExpandableTableView/LUExpandableTableView.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
@@ -426,6 +442,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LUExpandableTableView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
@@ -509,7 +526,12 @@
 			files = (
 				55C6BFE5202EA1AE009290ED /* CalendarViewController.swift in Sources */,
 				55C6BFAC202E8731009290ED /* ViewController.swift in Sources */,
+				55BBF46A205EE568003669E0 /* EventStore.swift in Sources */,
+				5502E8CD20472177005F039D /* CampusMapView.swift in Sources */,
+				55C6BFEC20321BA1009290ED /* eventCell.swift in Sources */,
+				55C6BFEA202FD761009290ED /* CalendarEvents.swift in Sources */,
 				55C6BFE1202EA1AE009290ED /* CustomCell.swift in Sources */,
+				5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */,
 				55C6BFE7202EA1AE009290ED /* MenuViewController.swift in Sources */,
 				55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */,
 				55C6BFE3202EA1AE009290ED /* EservicesViewController.swift in Sources */,

@@ -14,6 +14,7 @@ target 'UHDStudentResources' do
     pod 'FeedKit'
     pod 'Jupiter'
     pod 'LUExpandableTableView'
+    pod 'NVActivityIndicatorView'
 
 
   target 'UHDStudentResourcesTests' do

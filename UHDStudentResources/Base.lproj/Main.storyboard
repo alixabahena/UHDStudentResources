@@ -25,7 +25,7 @@
         <!--View Controller-->
         <scene sceneID="Xsh-Vd-jYH">
             <objects>
-                <viewController id="cXJ-Jy-ANV" customClass="ViewController" customModule="SideBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cXJ-Jy-ANV" customClass="ViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Veh-TA-o4U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,7 +228,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         <!--Menu View Controller-->
         <scene sceneID="ajt-vA-7pr">
             <objects>
-                <viewController id="2Qv-na-CTa" customClass="MenuViewController" customModule="SideBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Qv-na-CTa" customClass="MenuViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b81-xs-NKP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,6 +275,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <state key="normal" title="Map">
                                             <color key="titleColor" red="0.060523279011249542" green="0.17933514714241028" blue="0.41178834438323975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hcw-cf-Zj7" kind="show" animates="NO" id="eS8-n7-z2c"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gf-hE-NkJ" customClass="JTImageButton">
                                         <rect key="frame" x="0.0" y="387.33333333333331" width="343" height="89"/>
@@ -333,21 +336,20 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         <!--Eservices View Controller-->
         <scene sceneID="wfs-kf-Dk7">
             <objects>
-                <viewController id="JNf-If-B4y" customClass="EservicesViewController" customModule="SideBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JNf-If-B4y" customClass="EservicesViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uk3-oo-Jzi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmP-8J-AiE">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmP-8J-AiE">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                     <color key="textColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="textShadowColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="E-Services" id="TAx-AR-T3l">
+                                    <navigationItem title="MyUHD" id="TAx-AR-T3l">
                                         <barButtonItem key="leftBarButtonItem" image="Hamburger_icon.svg" id="leO-ui-wN4">
                                             <color key="tintColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
@@ -357,28 +359,192 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-fe-qpN" customClass="LUExpandableTableView" customModule="LUExpandableTableView">
-                                <rect key="frame" x="16" y="172" width="343" height="513"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-MO-FGe">
+                                <rect key="frame" x="15" y="88" width="345" height="690"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-KI-6Iz" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="94.333333333333329"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="Password Assistance">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInSender:" destination="JNf-If-B4y" eventType="touchUpInside" id="TQr-ji-YMG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-RT-RX1" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99.333333333333343" width="345" height="94.333333333333343"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="Schedule">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-f5-iiB" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="198.66666666666669" width="345" height="94.333333333333314"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="My Personal Profile">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-m6-3PB" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="298" width="345" height="94"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="My Transcripts and Grades">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-Zq-w69" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="397" width="345" height="94.333333333333314"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="My Payment">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-M6-SJL" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="496.33333333333331" width="345" height="94.333333333333314"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="Blackboard">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxs-fW-YM7" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="595.66666666666663" width="345" height="94.333333333333371"/>
+                                        <color key="backgroundColor" red="0.15612158179283142" green="0.25288575887680054" blue="0.43923705816268921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <state key="normal" title="Gatormail">
+                                            <color key="titleColor" red="1" green="0.99998801946640015" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <wkWebView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RnW-sE-Wie">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xae-lC-Chb">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WaX-MO-FGe" firstAttribute="top" secondItem="OmP-8J-AiE" secondAttribute="bottom" id="2RY-vz-MT3"/>
+                            <constraint firstItem="OmP-8J-AiE" firstAttribute="leading" secondItem="Uk3-oo-Jzi" secondAttribute="leading" id="D73-7Z-mtf"/>
+                            <constraint firstItem="OmP-8J-AiE" firstAttribute="top" secondItem="Veh-mw-6t5" secondAttribute="top" id="P0a-fc-E4s"/>
+                            <constraint firstItem="OmP-8J-AiE" firstAttribute="centerX" secondItem="WaX-MO-FGe" secondAttribute="centerX" id="bRr-Vz-6bC"/>
+                            <constraint firstItem="WaX-MO-FGe" firstAttribute="leading" secondItem="Veh-mw-6t5" secondAttribute="leading" constant="15" id="emS-T0-n9f"/>
+                            <constraint firstItem="Veh-mw-6t5" firstAttribute="trailing" secondItem="WaX-MO-FGe" secondAttribute="trailing" constant="15" id="g4H-Da-t3k"/>
+                            <constraint firstItem="Veh-mw-6t5" firstAttribute="bottom" secondItem="WaX-MO-FGe" secondAttribute="bottom" id="vIf-2X-VRs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Veh-mw-6t5"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="7zm-fe-qpN" id="njv-M7-XWA"/>
+                        <outlet property="passwordAssistButton" destination="kV3-KI-6Iz" id="nqj-Li-dVm"/>
+                        <outlet property="webView" destination="xae-lC-Chb" id="dAj-A7-dNB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpb-QA-Auh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2452" y="377.58620689655174"/>
         </scene>
+        <!--Campus Map View-->
+        <scene sceneID="yOa-lP-TaB">
+            <objects>
+                <viewController id="hcw-cf-Zj7" customClass="CampusMapView" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QFW-tf-X6r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxe-0m-C63">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textShadowColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Campus Map" id="phI-mr-FFY">
+                                        <barButtonItem key="leftBarButtonItem" image="Hamburger_icon.svg" id="jSV-GZ-tbZ">
+                                            <color key="tintColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="Weu-Cy-7al" kind="presentation" id="Lsi-EZ-qEd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LvV-H3-Esg">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LvV-H3-Esg" firstAttribute="top" secondItem="Kxe-0m-C63" secondAttribute="bottom" id="5kj-Hb-Akw"/>
+                            <constraint firstItem="LvV-H3-Esg" firstAttribute="bottom" secondItem="W9Z-XC-sAK" secondAttribute="bottom" id="9bx-dL-VQz"/>
+                            <constraint firstItem="Kxe-0m-C63" firstAttribute="leading" secondItem="W9Z-XC-sAK" secondAttribute="leading" id="Dpd-8b-GgK"/>
+                            <constraint firstItem="LvV-H3-Esg" firstAttribute="trailing" secondItem="W9Z-XC-sAK" secondAttribute="trailing" id="JZw-RL-fDz"/>
+                            <constraint firstItem="Kxe-0m-C63" firstAttribute="top" secondItem="W9Z-XC-sAK" secondAttribute="top" id="QHs-R3-WSA"/>
+                            <constraint firstItem="LvV-H3-Esg" firstAttribute="leading" secondItem="W9Z-XC-sAK" secondAttribute="leading" id="gjE-mC-E8w"/>
+                            <constraint firstItem="Kxe-0m-C63" firstAttribute="trailing" secondItem="W9Z-XC-sAK" secondAttribute="trailing" id="wk7-Q2-kWJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9Z-XC-sAK"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="LvV-H3-Esg" id="tPu-Ua-VYB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-xj-x6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="-364"/>
+        </scene>
         <!--Bus Routes View Controller-->
         <scene sceneID="Dta-J5-XbB">
             <objects>
-                <viewController id="4BM-ac-sw3" customClass="BusRoutesViewController" customModule="SideBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4BM-ac-sw3" customClass="BusRoutesViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibS-cZ-SbD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,7 +600,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         <!--Ib Calendar Data Source-->
         <scene sceneID="ckI-TS-eEq">
             <objects>
-                <viewController id="LDS-O7-lXc" customClass="CalendarViewController" customModule="SideBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LDS-O7-lXc" customClass="CalendarViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hvp-iV-96I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -517,7 +683,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="piS-VB-8aP" customClass="CustomCell" customModule="SideBarTest" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="piS-VB-8aP" customClass="CustomCell" customModule="UHDStudentResources" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="126" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -543,7 +709,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O48-zi-2fU">
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O48-zi-2fU">
                                                             <rect key="frame" x="58.666666666666664" y="77" width="9.9999999999999929" height="10"/>
                                                             <color key="backgroundColor" red="0.96788555383682251" green="0.81517934799194336" blue="0.27430978417396545" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
@@ -583,6 +749,46 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-gN-8Um">
                                 <rect key="frame" x="8" y="510" width="359" height="282"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" id="ofE-H1-F0V" customClass="eventCell" customModule="UHDStudentResources" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ofE-H1-F0V" id="dAH-aM-jkb">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40v-Ff-kEV">
+                                                    <rect key="frame" x="14" y="0.0" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="cH1-VD-JeM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-3Y-yg1">
+                                                    <rect key="frame" x="14" y="22" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="40v-Ff-kEV" firstAttribute="trailing" secondItem="1b1-3Y-yg1" secondAttribute="trailing" id="0UC-rZ-mvs"/>
+                                                <constraint firstItem="40v-Ff-kEV" firstAttribute="leading" secondItem="dAH-aM-jkb" secondAttribute="leadingMargin" constant="-1" id="BeZ-OQ-fbI"/>
+                                                <constraint firstAttribute="trailing" secondItem="40v-Ff-kEV" secondAttribute="trailing" id="Cqa-IG-715"/>
+                                                <constraint firstItem="1b1-3Y-yg1" firstAttribute="top" secondItem="40v-Ff-kEV" secondAttribute="bottom" constant="1" id="Viw-Ut-tAW"/>
+                                                <constraint firstItem="40v-Ff-kEV" firstAttribute="top" secondItem="dAH-aM-jkb" secondAttribute="top" id="cTZ-fd-6fJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1b1-3Y-yg1" secondAttribute="bottom" constant="-10" id="eax-DW-Q3q"/>
+                                                <constraint firstItem="40v-Ff-kEV" firstAttribute="leading" secondItem="1b1-3Y-yg1" secondAttribute="leading" id="lxF-xz-ydD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="1b1-3Y-yg1" id="01D-Hd-Wxa"/>
+                                            <outlet property="titleLabel" destination="40v-Ff-kEV" id="zkY-qH-pSE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TUf-2L-H9y">
                                 <rect key="frame" x="8" y="88" width="359" height="42"/>
@@ -601,6 +807,17 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-py-2Me" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="8" y="510" width="367" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="orbit"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.69102662800000003" green="0.222481966" blue="0.2862618864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -628,12 +845,13 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                     <connections>
                         <outlet property="calendarView" destination="wzE-Ml-p5k" id="fMI-8Y-Lq2"/>
                         <outlet property="month" destination="Yac-r0-Wz7" id="EVZ-7L-RuJ"/>
+                        <outlet property="tableView" destination="5hE-gN-8Um" id="His-Ec-pkp"/>
                         <outlet property="year" destination="1wU-5f-oM6" id="S4Z-SP-fOt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ON-Yv-M7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="-1111"/>
+            <point key="canvasLocation" x="2452" y="-1111.3300492610838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39m-lU-dZZ">
@@ -668,7 +886,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Hs-W1-jQK"/>
+        <segue reference="CDa-hY-HCd"/>
         <segue reference="kJQ-se-Q7l"/>
     </inferredMetricsTieBreakers>
 </document>

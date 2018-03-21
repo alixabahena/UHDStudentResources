@@ -10,6 +10,9 @@ PODS:
     - Unbox (~> 2.3)
   - LUExpandableTableView (3.0.0)
   - Mapbox-iOS-SDK (3.7.3)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
   - SideMenu (3.1.5)
   - Unbox (2.5.0)
 
@@ -21,6 +24,7 @@ DEPENDENCIES:
   - Jupiter
   - LUExpandableTableView
   - Mapbox-iOS-SDK
+  - NVActivityIndicatorView
   - SideMenu
 
 SPEC CHECKSUMS:
@@ -31,9 +35,10 @@ SPEC CHECKSUMS:
   Jupiter: 72b505f39dd2f9ba0674e62500825d6028f85115
   LUExpandableTableView: 3282bf2de40af3fadd97095f9a4738185a261d6f
   Mapbox-iOS-SDK: 5304bd9605babe6da9050ea4cb23c1671420b737
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 27fb8b8843fb1add8bc14e64db28f73166413eb1
+PODFILE CHECKSUM: 621a57cfb10a8f29e1a27d9a0af0970b99eefdc2
 
 COCOAPODS: 1.4.0

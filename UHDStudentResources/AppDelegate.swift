@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var events = [CalendarEvents]()
+    var calendarView: CalendarViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        DispatchQueue.global(qos: .background).async {
+            let otherVC = EventStore()
+            otherVC.populateEvents()
+            self.events = otherVC.allEvents
+            
+            
+            DispatchQueue.main.async {
+                print("delegate view")
+                print(self.events.count)
+            }
+        }
+    
         return true
     }
 
