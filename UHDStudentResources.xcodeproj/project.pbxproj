@@ -21,7 +21,6 @@
 		55C6BFE1202EA1AE009290ED /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFD8202EA1AD009290ED /* CustomCell.swift */; };
 		55C6BFE2202EA1AE009290ED /* BusRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */; };
 		55C6BFE3202EA1AE009290ED /* EservicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */; };
-		55C6BFE4202EA1AE009290ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFDB202EA1AD009290ED /* Assets.xcassets */; };
 		55C6BFE5202EA1AE009290ED /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFDC202EA1AD009290ED /* CalendarViewController.swift */; };
 		55C6BFE6202EA1AE009290ED /* Climacons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFDD202EA1AD009290ED /* Climacons.ttf */; };
 		55C6BFE7202EA1AE009290ED /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFDE202EA1AE009290ED /* MenuViewController.swift */; };
@@ -73,7 +72,6 @@
 		55C6BFD8202EA1AD009290ED /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusRoutesViewController.swift; sourceTree = "<group>"; };
 		55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EservicesViewController.swift; sourceTree = "<group>"; };
-		55C6BFDB202EA1AD009290ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C6BFDC202EA1AD009290ED /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		55C6BFDD202EA1AD009290ED /* Climacons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Climacons.ttf; sourceTree = "<group>"; };
 		55C6BFDE202EA1AE009290ED /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 		55C6BFA8202E8731009290ED /* UHDStudentResources */ = {
 			isa = PBXGroup;
 			children = (
-				55C6BFDB202EA1AD009290ED /* Assets.xcassets */,
 				55C6BFDF202EA1AE009290ED /* Base.lproj */,
 				55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */,
 				55C6BFDC202EA1AD009290ED /* CalendarViewController.swift */,
@@ -329,7 +326,6 @@
 				55C6BFB1202E8731009290ED /* Assets.xcassets in Resources */,
 				55C6BFE0202EA1AE009290ED /* Image.imageset in Resources */,
 				55C6BFAF202E8731009290ED /* Main.storyboard in Resources */,
-				55C6BFE4202EA1AE009290ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,6 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N69FV9W93M;
 				INFOPLIST_FILE = UHDStudentResources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alixabahena.UHDStudentResources;
@@ -718,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N69FV9W93M;
 				INFOPLIST_FILE = UHDStudentResources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alixabahena.UHDStudentResources;

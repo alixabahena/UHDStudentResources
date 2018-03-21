@@ -21,6 +21,7 @@ class EventStore{
         //feedkit variables
         let feedURL = URL(string: "https://calendar.uhd.edu/RSSSyndicator.aspx?category=&location=&type=N&starting=3/19/2018&ending=12/31/2018&binary=Y&keywords=")!
         var feed: RSSFeed?
+
         let parser = FeedParser(URL: feedURL)!
         let formatter = DateFormatter()
         
@@ -35,7 +36,7 @@ class EventStore{
                 let title: String = feed?.items?[index].title ?? "[no title]"
                 let link: String = feed?.items?[index].link ?? "[no link]"
                 let descriptions: String = feed?.items?[index].description ?? "[no description]"
-                let pubDate: Date = (feed?.items?[index].pubDate)! ?? Date()
+                let pubDate: Date = (feed?.items?[index].pubDate)! 
                 let category: String = String(describing: feed?.items?[index].categories)
                 
                 let newEvent = CalendarEvents(title: title, link: link, description: descriptions, pubDate: pubDate, category: category)
