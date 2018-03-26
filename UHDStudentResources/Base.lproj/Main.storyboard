@@ -119,7 +119,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 <rect key="frame" x="16" y="250" width="343" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UHD Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-bh-QnC">
-                                        <rect key="frame" x="110" y="7" width="164" height="21"/>
+                                        <rect key="frame" x="113" y="7" width="158" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5DQ-fo-sES"/>
                                         </constraints>
@@ -127,8 +127,8 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-O6-LWi">
-                                        <rect key="frame" x="163" y="29" width="111" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-O6-LWi">
+                                        <rect key="frame" x="157" y="30" width="111" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="c5s-DW-8RJ"/>
                                         </constraints>
@@ -136,14 +136,14 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-bj-8jk">
-                                        <rect key="frame" x="115.66666666666664" y="29" width="39.333333333333329" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-bj-8jk">
+                                        <rect key="frame" x="113" y="29" width="36" height="21"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIY-vg-58Z">
-                                        <rect key="frame" x="63" y="0.0" width="44.666666666666657" height="50"/>
+                                        <rect key="frame" x="57" y="0.0" width="48" height="50"/>
                                         <fontDescription key="fontDescription" name="Climacons-Font" family="Climacons-Font" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -152,18 +152,18 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 <color key="backgroundColor" name="Color"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="eGe-O6-LWi" secondAttribute="trailing" constant="69" id="DxS-ii-Mqk"/>
+                                    <constraint firstAttribute="trailing" secondItem="eGe-O6-LWi" secondAttribute="trailing" constant="75" id="DxS-ii-Mqk"/>
                                     <constraint firstItem="xi7-bh-QnC" firstAttribute="centerX" secondItem="aCJ-1H-qzw" secondAttribute="centerX" constant="20.5" id="GhC-Pa-rPP"/>
                                     <constraint firstItem="HjP-bj-8jk" firstAttribute="top" secondItem="xi7-bh-QnC" secondAttribute="bottom" constant="1" id="Heq-aS-2I0"/>
-                                    <constraint firstItem="xi7-bh-QnC" firstAttribute="leading" secondItem="gIY-vg-58Z" secondAttribute="trailing" constant="2" id="HlJ-ON-PBQ"/>
+                                    <constraint firstItem="xi7-bh-QnC" firstAttribute="leading" secondItem="gIY-vg-58Z" secondAttribute="trailing" constant="8" id="HlJ-ON-PBQ"/>
                                     <constraint firstItem="HjP-bj-8jk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gIY-vg-58Z" secondAttribute="trailing" constant="8" symbolic="YES" id="Jhn-IW-HAt"/>
                                     <constraint firstAttribute="bottom" secondItem="xi7-bh-QnC" secondAttribute="bottom" constant="50" id="KMW-rz-XW4"/>
                                     <constraint firstItem="gIY-vg-58Z" firstAttribute="centerY" secondItem="aCJ-1H-qzw" secondAttribute="centerY" constant="-14" id="Nht-sW-oRu"/>
                                     <constraint firstItem="xi7-bh-QnC" firstAttribute="top" secondItem="aCJ-1H-qzw" secondAttribute="topMargin" constant="-1" id="aMF-TR-sSJ"/>
                                     <constraint firstItem="eGe-O6-LWi" firstAttribute="leading" secondItem="HjP-bj-8jk" secondAttribute="trailing" constant="8" symbolic="YES" id="i5A-5c-U8o"/>
-                                    <constraint firstItem="gIY-vg-58Z" firstAttribute="leading" secondItem="aCJ-1H-qzw" secondAttribute="leadingMargin" constant="55" id="pkx-3l-YE6"/>
+                                    <constraint firstItem="gIY-vg-58Z" firstAttribute="leading" secondItem="aCJ-1H-qzw" secondAttribute="leadingMargin" constant="49" id="pkx-3l-YE6"/>
                                     <constraint firstItem="gIY-vg-58Z" firstAttribute="top" secondItem="xi7-bh-QnC" secondAttribute="top" constant="-7" id="x1b-pA-ggm"/>
-                                    <constraint firstItem="eGe-O6-LWi" firstAttribute="baseline" secondItem="HjP-bj-8jk" secondAttribute="baseline" id="xJ2-MD-7Bx"/>
+                                    <constraint firstItem="eGe-O6-LWi" firstAttribute="baseline" secondItem="HjP-bj-8jk" secondAttribute="baseline" constant="1" id="xJ2-MD-7Bx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -882,7 +882,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bps-5L-6vx"/>
+        <segue reference="9Hs-W1-jQK"/>
         <segue reference="kJQ-se-Q7l"/>
     </inferredMetricsTieBreakers>
 </document>
