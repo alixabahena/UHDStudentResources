@@ -17,19 +17,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        DispatchQueue.global(qos: .background).async {
+        DispatchQueue.global(qos: .utility).async {
             let otherVC = EventStore()
             otherVC.populateEvents()
             self.events = otherVC.allEvents
-            
-            
+
+
             DispatchQueue.main.async {
-                print("delegate view")
-                print(self.events.count)
+                print("Finished loading \(self.events.count) events")
             }
         }
-    
+        
+//        let myGroup = DispatchGroup()
+//        let otherVC = EventStore()
+//        myGroup.enter()
+//        otherVC.populateEvents()
+//        self.events = otherVC.allEvents
+//        myGroup.leave()
+//        print("delegate view")
+//        print(self.events.count)
+//
+//        myGroup.notify(queue: .main) {
+//            print("Finished all requests.")
+//        }
+        
         return true
     }
 

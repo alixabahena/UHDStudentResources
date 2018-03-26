@@ -32,6 +32,7 @@ class EservicesViewController: UIViewController {
         let loginUser: String = "c7e28a618886dba19eac0892ad90cf51"
         
         // The page you want to go to after login
+      
         let redirectPage: String = "https://myidentity.uhd.edu/arms/protected/"
         
         // Get the user's credentials from the `UITextField`s

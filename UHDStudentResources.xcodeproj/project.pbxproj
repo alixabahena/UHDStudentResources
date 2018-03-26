@@ -10,6 +10,7 @@
 		5502E8CD20472177005F039D /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CC20472177005F039D /* CampusMapView.swift */; };
 		5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CE204726AF005F039D /* RoundedButton.swift */; };
 		55BBF46A205EE568003669E0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF469205EE568003669E0 /* EventStore.swift */; };
+		55BBF46E206488F4003669E0 /* UHDCalendar.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55BBF46D206488F4003669E0 /* UHDCalendar.xml */; };
 		55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFA9202E8731009290ED /* AppDelegate.swift */; };
 		55C6BFAC202E8731009290ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFAB202E8731009290ED /* ViewController.swift */; };
 		55C6BFAF202E8731009290ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFAD202E8731009290ED /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		55C6BFB4202E8731009290ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFB2202E8731009290ED /* LaunchScreen.storyboard */; };
 		55C6BFBF202E8732009290ED /* UHDStudentResourcesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFBE202E8732009290ED /* UHDStudentResourcesTests.swift */; };
 		55C6BFCA202E8732009290ED /* UHDStudentResourcesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFC9202E8732009290ED /* UHDStudentResourcesUITests.swift */; };
-		55C6BFE0202EA1AE009290ED /* Image.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFD7202EA1AD009290ED /* Image.imageset */; };
 		55C6BFE1202EA1AE009290ED /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFD8202EA1AD009290ED /* CustomCell.swift */; };
 		55C6BFE2202EA1AE009290ED /* BusRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */; };
 		55C6BFE3202EA1AE009290ED /* EservicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */; };
@@ -55,6 +55,8 @@
 		5502E8CC20472177005F039D /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		5502E8CE204726AF005F039D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		55BBF469205EE568003669E0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
+		55BBF46C20630B93003669E0 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		55BBF46D206488F4003669E0 /* UHDCalendar.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.xml; sourceTree = "<group>"; };
 		55C6BFA6202E8731009290ED /* UHDStudentResources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UHDStudentResources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C6BFA9202E8731009290ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C6BFAB202E8731009290ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 		55C6BFC5202E8732009290ED /* UHDStudentResourcesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UHDStudentResourcesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C6BFC9202E8732009290ED /* UHDStudentResourcesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHDStudentResourcesUITests.swift; sourceTree = "<group>"; };
 		55C6BFCB202E8732009290ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55C6BFD7202EA1AD009290ED /* Image.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Image.imageset; sourceTree = "<group>"; };
 		55C6BFD8202EA1AD009290ED /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusRoutesViewController.swift; sourceTree = "<group>"; };
 		55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EservicesViewController.swift; sourceTree = "<group>"; };
@@ -115,15 +116,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55BBF46B20630B93003669E0 /* Image.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				55BBF46C20630B93003669E0 /* Contents.json */,
+			);
+			path = Image.imageset;
+			sourceTree = "<group>";
+		};
 		55C6BF9D202E8731009290ED = {
 			isa = PBXGroup;
 			children = (
+				A4C5C8006CEA7FC4D897DE12 /* Frameworks */,
+				C34D3C6D845D47C08611E577 /* Pods */,
+				55C6BFA7202E8731009290ED /* Products */,
 				55C6BFA8202E8731009290ED /* UHDStudentResources */,
 				55C6BFBD202E8732009290ED /* UHDStudentResourcesTests */,
 				55C6BFC8202E8732009290ED /* UHDStudentResourcesUITests */,
-				55C6BFA7202E8731009290ED /* Products */,
-				C34D3C6D845D47C08611E577 /* Pods */,
-				A4C5C8006CEA7FC4D897DE12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +149,9 @@
 		55C6BFA8202E8731009290ED /* UHDStudentResources */ = {
 			isa = PBXGroup;
 			children = (
+				55BBF46D206488F4003669E0 /* UHDCalendar.xml */,
+				55C6BFB0202E8731009290ED /* Assets.xcassets */,
+				55BBF46B20630B93003669E0 /* Image.imageset */,
 				55C6BFDF202EA1AE009290ED /* Base.lproj */,
 				55C6BFD9202EA1AD009290ED /* BusRoutesViewController.swift */,
 				55C6BFDC202EA1AD009290ED /* CalendarViewController.swift */,
@@ -149,12 +161,10 @@
 				55C6BFEB20321BA1009290ED /* eventCell.swift */,
 				55C6BFD8202EA1AD009290ED /* CustomCell.swift */,
 				55C6BFDA202EA1AD009290ED /* EservicesViewController.swift */,
-				55C6BFD7202EA1AD009290ED /* Image.imageset */,
 				55C6BFDE202EA1AE009290ED /* MenuViewController.swift */,
 				55C6BFA9202E8731009290ED /* AppDelegate.swift */,
 				55C6BFAB202E8731009290ED /* ViewController.swift */,
 				55C6BFAD202E8731009290ED /* Main.storyboard */,
-				55C6BFB0202E8731009290ED /* Assets.xcassets */,
 				55C6BFB2202E8731009290ED /* LaunchScreen.storyboard */,
 				55C6BFB5202E8731009290ED /* Info.plist */,
 				5502E8CC20472177005F039D /* CampusMapView.swift */,
@@ -324,8 +334,8 @@
 				55C6BFE8202EA1AE009290ED /* Base.lproj in Resources */,
 				55C6BFB4202E8731009290ED /* LaunchScreen.storyboard in Resources */,
 				55C6BFB1202E8731009290ED /* Assets.xcassets in Resources */,
-				55C6BFE0202EA1AE009290ED /* Image.imageset in Resources */,
 				55C6BFAF202E8731009290ED /* Main.storyboard in Resources */,
+				55BBF46E206488F4003669E0 /* UHDCalendar.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

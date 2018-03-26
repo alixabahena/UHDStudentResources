@@ -17,15 +17,13 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var tableView: UITableView!
-
-    let delegate = UIApplication.shared.delegate as! AppDelegate
    
     let calendar = Calendar.current
     var selectedDate = Date()
     let todaysDate = Date()
     let formatter = DateFormatter()
     
-  
+    let otherVC = UIApplication.shared.delegate as! AppDelegate
     var events = [CalendarEvents]()
     var todaysEvents = [CalendarEvents]()
     
@@ -38,7 +36,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
   
     
     override func viewWillAppear(_ animated: Bool) {
-
+        
     }
     
     override func viewDidLoad() {
@@ -55,28 +53,37 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.rowHeight = 45
         tableView.estimatedRowHeight = 45
         tableView.tableFooterView = UIView(frame: .zero)
+        
         let size = CGSize(width: 30, height: 30)
         
-        startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
+       // self.startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
+       
         
-        DispatchQueue.global(qos: .background).async {
-//            self.events = self.delegate.events
-            let otherVC = EventStore()
-            otherVC.populateEvents()
-            self.events = otherVC.allEvents
-            self.dayEvents()
-            
-            DispatchQueue.main.async {
-                print("calendar view")
-                print(self.events.count)
-                self.stopAnimating()
-                self.tableView.reloadData()
-            }
-        }
+        self.events = self.otherVC.events
+        self.dayEvents()
+       
+       // self.tableView.reloadData()
+        
+//        DispatchQueue.global(qos: .background).async {
+//            //self.events = self.delegate.events
+//            //let month = self.calendar.component(.month, from: self.selectedDate)
+//            //otherVC.populateEvents
+//           // otherVC.populateMonth(month: month)
+//
+//            self.events = self.otherVC.events
+//            self.dayEvents()
+//
+//            DispatchQueue.main.async {
+//                //print("calendar view")
+//               // print(self.events.count)
+//              self.stopAnimating()
+//                self.tableView.reloadData()
+//            }
+//        }
+
         
     }
     
-   
     
      func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -89,10 +96,11 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! eventCell
         
-            cell.prepareForReuse()
-        
 
-                dayEvents()
+        
+        cell.prepareForReuse()
+
+        dayEvents()
         if(todaysEvents.count != 0)
         {
                 cell.titleLabel.text = todaysEvents[indexPath.row].title
@@ -137,6 +145,8 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
                 validCell.dateLabel.textColor = UIColor.black
             } else {
                 validCell.dateLabel.textColor = UIColor(named: "lightGreyText")
+                
+                
             }
             }
         }

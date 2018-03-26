@@ -37,6 +37,7 @@ class ViewController: UIViewController {
 
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         //weather view
         //        weatherView.layer.shadowColor = UIColor.lightGray.cgColor
