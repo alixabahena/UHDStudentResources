@@ -119,7 +119,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 <rect key="frame" x="16" y="250" width="343" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UHD Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-bh-QnC">
-                                        <rect key="frame" x="113" y="7" width="158" height="21"/>
+                                        <rect key="frame" x="134" y="7" width="116" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5DQ-fo-sES"/>
                                         </constraints>
@@ -127,8 +127,8 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-O6-LWi">
-                                        <rect key="frame" x="157" y="30" width="111" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGe-O6-LWi">
+                                        <rect key="frame" x="157" y="30" width="111" height="0.0"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="c5s-DW-8RJ"/>
                                         </constraints>
@@ -136,14 +136,14 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-bj-8jk">
-                                        <rect key="frame" x="113" y="29" width="36" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-bj-8jk">
+                                        <rect key="frame" x="149" y="29" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIY-vg-58Z">
-                                        <rect key="frame" x="57" y="0.0" width="48" height="50"/>
+                                        <rect key="frame" x="57" y="0.0" width="69" height="50"/>
                                         <fontDescription key="fontDescription" name="Climacons-Font" family="Climacons-Font" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -742,6 +742,20 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-gN-8Um">
                                 <rect key="frame" x="8" y="510" width="359" height="282"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="LFg-dl-Fa9">
+                                    <rect key="frame" x="0.0" y="72" width="359" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Events Scheduled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-1e-3cn">
+                                            <rect key="frame" x="8" y="30" width="343" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" id="ofE-H1-F0V" customClass="eventCell" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="359" height="44"/>
@@ -800,14 +814,17 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-py-2Me" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="8" y="510" width="367" height="282"/>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-py-2Me" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="60" y="568" width="255" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="orbit"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" red="0.69102662800000003" green="0.222481966" blue="0.2862618864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -836,8 +853,10 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="TF2-py-2Me" id="ghK-ja-Lhi"/>
                         <outlet property="calendarView" destination="wzE-Ml-p5k" id="fMI-8Y-Lq2"/>
                         <outlet property="month" destination="Yac-r0-Wz7" id="EVZ-7L-RuJ"/>
+                        <outlet property="noItemsView" destination="LFg-dl-Fa9" id="NFY-C0-nI3"/>
                         <outlet property="tableView" destination="5hE-gN-8Um" id="His-Ec-pkp"/>
                         <outlet property="year" destination="1wU-5f-oM6" id="S4Z-SP-fOt"/>
                     </connections>
@@ -882,7 +901,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Hs-W1-jQK"/>
+        <segue reference="bps-5L-6vx"/>
         <segue reference="kJQ-se-Q7l"/>
     </inferredMetricsTieBreakers>
 </document>

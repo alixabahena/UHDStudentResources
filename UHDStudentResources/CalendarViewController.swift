@@ -12,12 +12,14 @@ import FeedKit
 import NVActivityIndicatorView
 
 
-class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NVActivityIndicatorViewable {
+class CalendarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var tableView: UITableView!
-   
+    @IBOutlet weak var activityIndicatorView: NVActivityIndicatorView!
+    
+    @IBOutlet weak var noItemsView: UIView!
     let calendar = Calendar.current
     var selectedDate = Date()
     let todaysDate = Date()
@@ -26,6 +28,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     let otherVC = UIApplication.shared.delegate as! AppDelegate
     var events = [CalendarEvents]()
     var todaysEvents = [CalendarEvents]()
+
     
     func dayEvents()
     {
@@ -36,7 +39,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
   
     
     override func viewWillAppear(_ animated: Bool) {
-        
+       
     }
     
     override func viewDidLoad() {
@@ -53,37 +56,29 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.rowHeight = 45
         tableView.estimatedRowHeight = 45
         tableView.tableFooterView = UIView(frame: .zero)
+        tableView.backgroundView = noItemsView
         
-        let size = CGSize(width: 30, height: 30)
-        
-       // self.startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
-       
-        
+       // let size = CGSize(width: 30, height: 30)
+       //self.startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
+         activityIndicatorView.startAnimating()
+        NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+      
+        //load data here
         self.events = self.otherVC.events
         self.dayEvents()
-       
-       // self.tableView.reloadData()
-        
-//        DispatchQueue.global(qos: .background).async {
-//            //self.events = self.delegate.events
-//            //let month = self.calendar.component(.month, from: self.selectedDate)
-//            //otherVC.populateEvents
-//           // otherVC.populateMonth(month: month)
-//
-//            self.events = self.otherVC.events
-//            self.dayEvents()
-//
-//            DispatchQueue.main.async {
-//                //print("calendar view")
-//               // print(self.events.count)
-//              self.stopAnimating()
-//                self.tableView.reloadData()
-//            }
-//        }
+        self.tableView.reloadData()
+        activityIndicatorView.stopAnimating()
 
-        
     }
-    
+
+    @objc func loadList(){
+        //load data here
+        self.events = self.otherVC.events
+        self.dayEvents()
+        self.tableView.reloadData()
+        activityIndicatorView.stopAnimating()
+    }
+
     
      func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -96,7 +91,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! eventCell
         
-
+        
         
         cell.prepareForReuse()
 
@@ -109,7 +104,13 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
                 cell.dateLabel.text = eventDate
         
         }
+        else if(tableView.visibleCells.count == 0)
+        {
+            
+        }
+        
             return cell
+        
     }
     
     

@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		5502E8CD20472177005F039D /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CC20472177005F039D /* CampusMapView.swift */; };
 		5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CE204726AF005F039D /* RoundedButton.swift */; };
+		55421CDD206B406B00E06388 /* UHDCalendar.rss in Resources */ = {isa = PBXBuildFile; fileRef = 55421CDC206B406A00E06388 /* UHDCalendar.rss */; };
+		5570AF57206996CD00C30B07 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5570AF56206996CC00C30B07 /* awsconfiguration.json */; };
 		55BBF46A205EE568003669E0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF469205EE568003669E0 /* EventStore.swift */; };
-		55BBF46E206488F4003669E0 /* UHDCalendar.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55BBF46D206488F4003669E0 /* UHDCalendar.xml */; };
 		55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFA9202E8731009290ED /* AppDelegate.swift */; };
 		55C6BFAC202E8731009290ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFAB202E8731009290ED /* ViewController.swift */; };
 		55C6BFAF202E8731009290ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C6BFAD202E8731009290ED /* Main.storyboard */; };
@@ -54,9 +55,10 @@
 		3A8E8812A8BC720C0AD1A0AA /* Pods_UHDStudentResourcesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResourcesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5502E8CC20472177005F039D /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		5502E8CE204726AF005F039D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		55421CDC206B406A00E06388 /* UHDCalendar.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.rss; sourceTree = "<group>"; };
+		5570AF56206996CC00C30B07 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		55BBF469205EE568003669E0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		55BBF46C20630B93003669E0 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		55BBF46D206488F4003669E0 /* UHDCalendar.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.xml; sourceTree = "<group>"; };
 		55C6BFA6202E8731009290ED /* UHDStudentResources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UHDStudentResources.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C6BFA9202E8731009290ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C6BFAB202E8731009290ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +151,8 @@
 		55C6BFA8202E8731009290ED /* UHDStudentResources */ = {
 			isa = PBXGroup;
 			children = (
-				55BBF46D206488F4003669E0 /* UHDCalendar.xml */,
+				55421CDC206B406A00E06388 /* UHDCalendar.rss */,
+				5570AF56206996CC00C30B07 /* awsconfiguration.json */,
 				55C6BFB0202E8731009290ED /* Assets.xcassets */,
 				55BBF46B20630B93003669E0 /* Image.imageset */,
 				55C6BFDF202EA1AE009290ED /* Base.lproj */,
@@ -331,11 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C6BFE6202EA1AE009290ED /* Climacons.ttf in Resources */,
+				5570AF57206996CD00C30B07 /* awsconfiguration.json in Resources */,
 				55C6BFE8202EA1AE009290ED /* Base.lproj in Resources */,
+				55421CDD206B406B00E06388 /* UHDCalendar.rss in Resources */,
 				55C6BFB4202E8731009290ED /* LaunchScreen.storyboard in Resources */,
 				55C6BFB1202E8731009290ED /* Assets.xcassets in Resources */,
 				55C6BFAF202E8731009290ED /* Main.storyboard in Resources */,
-				55BBF46E206488F4003669E0 /* UHDCalendar.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,33 +13,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var events = [CalendarEvents]()
-    var calendarView: CalendarViewController?
-
+    let feedURL = Bundle.main.url(forResource: "UHDCalendar", withExtension: "rss")!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         DispatchQueue.global(qos: .utility).async {
+            let myGroup = DispatchGroup()
+           // let otherVC = EventStore()
+            myGroup.enter()
             let otherVC = EventStore()
-            otherVC.populateEvents()
+            otherVC.populateEvents(feedURL: self.feedURL)
             self.events = otherVC.allEvents
-
-
+            myGroup.leave()
             DispatchQueue.main.async {
-                print("Finished loading \(self.events.count) events")
+                //print("Finished loading \(self.events.count) events")
+                myGroup.notify(queue: .main) {
+
+                    print("Finished loading \(self.events.count) events")
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+
             }
         }
-        
-//        let myGroup = DispatchGroup()
-//        let otherVC = EventStore()
-//        myGroup.enter()
-//        otherVC.populateEvents()
-//        self.events = otherVC.allEvents
-//        myGroup.leave()
-//        print("delegate view")
-//        print(self.events.count)
-//
-//        myGroup.notify(queue: .main) {
-//            print("Finished all requests.")
-//        }
+
+        }
         
         return true
     }
