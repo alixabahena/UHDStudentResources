@@ -10,6 +10,7 @@
 		5502E8CD20472177005F039D /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CC20472177005F039D /* CampusMapView.swift */; };
 		5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CE204726AF005F039D /* RoundedButton.swift */; };
 		55421CDD206B406B00E06388 /* UHDCalendar.rss in Resources */ = {isa = PBXBuildFile; fileRef = 55421CDC206B406A00E06388 /* UHDCalendar.rss */; };
+		55421CDF206C134B00E06388 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55421CDE206C134B00E06388 /* FAQViewController.swift */; };
 		5570AF57206996CD00C30B07 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5570AF56206996CC00C30B07 /* awsconfiguration.json */; };
 		55BBF46A205EE568003669E0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF469205EE568003669E0 /* EventStore.swift */; };
 		55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFA9202E8731009290ED /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		5502E8CC20472177005F039D /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		5502E8CE204726AF005F039D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		55421CDC206B406A00E06388 /* UHDCalendar.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.rss; sourceTree = "<group>"; };
+		55421CDE206C134B00E06388 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		5570AF56206996CC00C30B07 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		55BBF469205EE568003669E0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		55BBF46C20630B93003669E0 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				55C6BFB5202E8731009290ED /* Info.plist */,
 				5502E8CC20472177005F039D /* CampusMapView.swift */,
 				5502E8CE204726AF005F039D /* RoundedButton.swift */,
+				55421CDE206C134B00E06388 /* FAQViewController.swift */,
 			);
 			path = UHDStudentResources;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				55C6BFAC202E8731009290ED /* ViewController.swift in Sources */,
 				55BBF46A205EE568003669E0 /* EventStore.swift in Sources */,
 				5502E8CD20472177005F039D /* CampusMapView.swift in Sources */,
+				55421CDF206C134B00E06388 /* FAQViewController.swift in Sources */,
 				55C6BFEC20321BA1009290ED /* eventCell.swift in Sources */,
 				55C6BFEA202FD761009290ED /* CalendarEvents.swift in Sources */,
 				55C6BFE1202EA1AE009290ED /* CustomCell.swift in Sources */,

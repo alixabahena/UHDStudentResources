@@ -305,6 +305,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <state key="normal" title="FAQ">
                                             <color key="titleColor" red="0.060523279011249542" green="0.17933514714241028" blue="0.41178834438323975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="vXn-x1-Xg1" kind="show" animates="NO" id="h3e-96-NsK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -356,6 +359,11 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                                 <segue destination="Weu-Cy-7al" kind="presentation" id="bps-5L-6vx"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="stop" id="Fj6-Pa-xoM">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="JNf-If-B4y" id="Jg2-cc-w2E"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -384,6 +392,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="schedulePressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="XRp-FZ-dLl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aa-f5-iiB" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="198.66666666666669" width="345" height="94.333333333333314"/>
@@ -394,6 +405,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="personalPressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="iq5-O3-zh0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-m6-3PB" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="298" width="345" height="94"/>
@@ -404,6 +418,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gradesPressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="h0z-Oo-978"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-Zq-w69" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="397" width="345" height="94.333333333333314"/>
@@ -414,6 +431,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="paymentPressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="F5l-TK-Dfz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBb-M6-SJL" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="496.33333333333331" width="345" height="94.333333333333314"/>
@@ -424,6 +444,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="blackboardPressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="C3x-H0-sEs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxs-fW-YM7" customClass="RoundedButton" customModule="UHDStudentResources" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="595.66666666666663" width="345" height="94.333333333333371"/>
@@ -434,21 +457,14 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gatormailPressed:" destination="JNf-If-B4y" eventType="touchUpInside" id="Vgp-bm-YxZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <wkWebView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RnW-sE-Wie">
+                            <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xae-lC-Chb">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <wkWebView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xae-lC-Chb">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -459,17 +475,22 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WaX-MO-FGe" firstAttribute="top" secondItem="OmP-8J-AiE" secondAttribute="bottom" id="2RY-vz-MT3"/>
+                            <constraint firstItem="xae-lC-Chb" firstAttribute="top" secondItem="OmP-8J-AiE" secondAttribute="bottom" id="9Dk-su-Jj8"/>
                             <constraint firstItem="OmP-8J-AiE" firstAttribute="leading" secondItem="Uk3-oo-Jzi" secondAttribute="leading" id="D73-7Z-mtf"/>
                             <constraint firstItem="OmP-8J-AiE" firstAttribute="top" secondItem="Veh-mw-6t5" secondAttribute="top" id="P0a-fc-E4s"/>
+                            <constraint firstItem="xae-lC-Chb" firstAttribute="bottom" secondItem="Veh-mw-6t5" secondAttribute="bottom" id="P8u-cn-ZVE"/>
                             <constraint firstItem="OmP-8J-AiE" firstAttribute="centerX" secondItem="WaX-MO-FGe" secondAttribute="centerX" id="bRr-Vz-6bC"/>
                             <constraint firstItem="WaX-MO-FGe" firstAttribute="leading" secondItem="Veh-mw-6t5" secondAttribute="leading" constant="15" id="emS-T0-n9f"/>
+                            <constraint firstItem="xae-lC-Chb" firstAttribute="leading" secondItem="Veh-mw-6t5" secondAttribute="leading" id="erp-dO-gc3"/>
                             <constraint firstItem="Veh-mw-6t5" firstAttribute="trailing" secondItem="WaX-MO-FGe" secondAttribute="trailing" constant="15" id="g4H-Da-t3k"/>
+                            <constraint firstItem="xae-lC-Chb" firstAttribute="trailing" secondItem="Veh-mw-6t5" secondAttribute="trailing" id="v8I-k2-oNQ"/>
                             <constraint firstItem="Veh-mw-6t5" firstAttribute="bottom" secondItem="WaX-MO-FGe" secondAttribute="bottom" id="vIf-2X-VRs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Veh-mw-6t5"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="cancelButton" destination="Fj6-Pa-xoM" id="Los-bd-3tJ"/>
                         <outlet property="passwordAssistButton" destination="kV3-KI-6Iz" id="nqj-Li-dVm"/>
                         <outlet property="webView" destination="xae-lC-Chb" id="dAj-A7-dNB"/>
                     </connections>
@@ -477,6 +498,63 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpb-QA-Auh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2452" y="377.58620689655174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="knc-hT-89b">
+            <objects>
+                <viewController id="vXn-x1-Xg1" customClass="FAQViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUv-jH-MbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfE-ga-ORQ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textShadowColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="FAQ" id="HXY-7J-tZK">
+                                        <barButtonItem key="leftBarButtonItem" image="Hamburger_icon.svg" id="QxX-oH-PYm">
+                                            <color key="tintColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="Weu-Cy-7al" kind="presentation" id="brv-aT-WA4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGa-zx-iLD">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eGa-zx-iLD" firstAttribute="top" secondItem="KfE-ga-ORQ" secondAttribute="bottom" id="4Wy-3j-bYW"/>
+                            <constraint firstItem="eGa-zx-iLD" firstAttribute="trailing" secondItem="MYr-3F-Vke" secondAttribute="trailing" id="84z-a4-9D2"/>
+                            <constraint firstItem="eGa-zx-iLD" firstAttribute="top" secondItem="KfE-ga-ORQ" secondAttribute="bottom" id="HA3-hI-XxC"/>
+                            <constraint firstItem="KfE-ga-ORQ" firstAttribute="trailing" secondItem="MYr-3F-Vke" secondAttribute="trailing" id="JPH-vK-hih"/>
+                            <constraint firstItem="eGa-zx-iLD" firstAttribute="bottom" secondItem="MYr-3F-Vke" secondAttribute="bottom" id="T07-uG-nPi"/>
+                            <constraint firstItem="KfE-ga-ORQ" firstAttribute="leading" secondItem="MYr-3F-Vke" secondAttribute="leading" id="jId-ep-Pc2"/>
+                            <constraint firstItem="KfE-ga-ORQ" firstAttribute="top" secondItem="MYr-3F-Vke" secondAttribute="top" id="o35-bf-gzE"/>
+                            <constraint firstItem="eGa-zx-iLD" firstAttribute="leading" secondItem="MYr-3F-Vke" secondAttribute="leading" id="rVr-bg-B9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MYr-3F-Vke"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="eGa-zx-iLD" id="g99-ca-lle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWx-jT-XXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3561" y="20"/>
         </scene>
         <!--Campus Map View-->
         <scene sceneID="yOa-lP-TaB">
@@ -532,7 +610,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-xj-x6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3412" y="-364"/>
+            <point key="canvasLocation" x="3524" y="-831"/>
         </scene>
         <!--Bus Routes View Controller-->
         <scene sceneID="Dta-J5-XbB">
@@ -901,7 +979,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bps-5L-6vx"/>
+        <segue reference="brv-aT-WA4"/>
         <segue reference="kJQ-se-Q7l"/>
     </inferredMetricsTieBreakers>
 </document>
