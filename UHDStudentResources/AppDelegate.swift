@@ -17,11 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        
         DispatchQueue.global(qos: .utility).async {
             let myGroup = DispatchGroup()
-           // let otherVC = EventStore()
+            // let otherVC = EventStore()
             myGroup.enter()
             let otherVC = EventStore()
             otherVC.populateEvents(feedURL: self.feedURL)
@@ -30,15 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             DispatchQueue.main.async {
                 //print("Finished loading \(self.events.count) events")
                 myGroup.notify(queue: .main) {
-
+                    
                     print("Finished loading \(self.events.count) events")
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
-
+                }
             }
         }
-
-        }
-        
         return true
     }
 

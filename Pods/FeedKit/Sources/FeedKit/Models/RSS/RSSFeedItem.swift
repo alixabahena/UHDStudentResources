@@ -192,6 +192,11 @@ public class RSSFeedItem {
     /// Media RSS is a new RSS module that supplements the <enclosure>
     /// capabilities of RSS 2.0.
     public var media: MediaNamespace?
+    
+    public var starttime: String?
+    public var startdate: String?
+    public var endtime: String?
+    public var enddate: String?
 }
 
 // MARK: - Equatable
@@ -212,7 +217,10 @@ extension RSSFeedItem: Equatable {
             lhs.media == rhs.media &&
             lhs.pubDate == rhs.pubDate &&
             lhs.source == rhs.source &&
-            lhs.title == rhs.title
+            lhs.title == rhs.title &&
+            lhs.endtime == rhs.endtime &&
+            lhs.startdate == rhs.startdate &&
+            lhs.enddate == rhs.enddate
     }
     
 }

@@ -1,4 +1,5 @@
 PODS:
+  - ExpandableCell (1.2.2)
   - FeedKit (7.0.1)
   - FrostedSidebar (1.0.0)
   - JTAppleCalendar (7.1.5)
@@ -17,6 +18,7 @@ PODS:
   - Unbox (2.5.0)
 
 DEPENDENCIES:
+  - ExpandableCell
   - FeedKit
   - FrostedSidebar
   - JTAppleCalendar
@@ -28,6 +30,7 @@ DEPENDENCIES:
   - SideMenu
 
 SPEC CHECKSUMS:
+  ExpandableCell: f2d99f9ae03a8c393e268adddaeb7f6d2525a76e
   FeedKit: 9be69ab57ef0eb922ee4b6c31cb6b8840a5bbb29
   FrostedSidebar: f86c6843cabd5d456f9234afb6eea22a7512532f
   JTAppleCalendar: 2d4f974f9f3c8b4964d51ca1f6e004883c031fbe
@@ -39,6 +42,6 @@ SPEC CHECKSUMS:
   SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 621a57cfb10a8f29e1a27d9a0af0970b99eefdc2
+PODFILE CHECKSUM: cf9b9d1d847656e6d87055350bcd25ea15ef0323
 
 COCOAPODS: 1.4.0

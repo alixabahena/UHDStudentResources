@@ -76,6 +76,10 @@ extension RSSFeed {
         case .rssChannelItemPubDate:                                self.items?.last?.pubDate                                       = string.toDate(from: .rfc822)
         case .rssChannelItemSource:                                 self.items?.last?.source?.value                                 = self.items?.last?.source?.value?.appending(string) ?? string
         case .rssChannelItemContentEncoded:                         self.items?.last?.content?.contentEncoded                       = self.items?.last?.content?.contentEncoded?.appending(string) ?? string
+        case .rssChannelItemStartdate:                              self.items?.last?.startdate                                         = self.items?.last?.startdate?.appending(string) ?? string
+        case .rssChannelItemStarttime:                              self.items?.last?.starttime                                         = self.items?.last?.starttime?.appending(string) ?? string
+        case .rssChannelItemEnddate:                              self.items?.last?.enddate                                         = self.items?.last?.enddate?.appending(string) ?? string
+        case .rssChannelItemEndtime:                              self.items?.last?.endtime                                         = self.items?.last?.endtime?.appending(string) ?? string
         case .rssChannelSyndicationUpdatePeriod:                    self.syndication?.syUpdatePeriod                                = SyndicationUpdatePeriod(rawValue: string)
         case .rssChannelSyndicationUpdateFrequency:                 self.syndication?.syUpdateFrequency                             = Int(string)
         case .rssChannelSyndicationUpdateBase:                      self.syndication?.syUpdateBase                                  = string.toDate(from: .iso8601)

@@ -12,6 +12,8 @@
 		55421CDD206B406B00E06388 /* UHDCalendar.rss in Resources */ = {isa = PBXBuildFile; fileRef = 55421CDC206B406A00E06388 /* UHDCalendar.rss */; };
 		55421CDF206C134B00E06388 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55421CDE206C134B00E06388 /* FAQViewController.swift */; };
 		5570AF57206996CD00C30B07 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5570AF56206996CC00C30B07 /* awsconfiguration.json */; };
+		558036A3207E7496001C0D31 /* ResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558036A2207E7496001C0D31 /* ResourceViewController.swift */; };
+		558036A5207E75D9001C0D31 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558036A4207E75D9001C0D31 /* EventDetailsViewController.swift */; };
 		55BBF46A205EE568003669E0 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BBF469205EE568003669E0 /* EventStore.swift */; };
 		55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFA9202E8731009290ED /* AppDelegate.swift */; };
 		55C6BFAC202E8731009290ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C6BFAB202E8731009290ED /* ViewController.swift */; };
@@ -59,6 +61,8 @@
 		55421CDC206B406A00E06388 /* UHDCalendar.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.rss; sourceTree = "<group>"; };
 		55421CDE206C134B00E06388 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		5570AF56206996CC00C30B07 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		558036A2207E7496001C0D31 /* ResourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceViewController.swift; sourceTree = "<group>"; };
+		558036A4207E75D9001C0D31 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		55BBF469205EE568003669E0 /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		55BBF46C20630B93003669E0 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		55C6BFA6202E8731009290ED /* UHDStudentResources.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UHDStudentResources.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +179,8 @@
 				5502E8CC20472177005F039D /* CampusMapView.swift */,
 				5502E8CE204726AF005F039D /* RoundedButton.swift */,
 				55421CDE206C134B00E06388 /* FAQViewController.swift */,
+				558036A2207E7496001C0D31 /* ResourceViewController.swift */,
+				558036A4207E75D9001C0D31 /* EventDetailsViewController.swift */,
 			);
 			path = UHDStudentResources;
 			sourceTree = "<group>";
@@ -292,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alixa Bahena";
 				TargetAttributes = {
 					55C6BFA5202E8731009290ED = {
@@ -433,6 +439,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UHDStudentResources/Pods-UHDStudentResources-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FrostedSidebar/FrostedSidebar.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
@@ -447,6 +454,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExpandableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrostedSidebar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
@@ -537,11 +545,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558036A3207E7496001C0D31 /* ResourceViewController.swift in Sources */,
 				55C6BFE5202EA1AE009290ED /* CalendarViewController.swift in Sources */,
 				55C6BFAC202E8731009290ED /* ViewController.swift in Sources */,
 				55BBF46A205EE568003669E0 /* EventStore.swift in Sources */,
 				5502E8CD20472177005F039D /* CampusMapView.swift in Sources */,
 				55421CDF206C134B00E06388 /* FAQViewController.swift in Sources */,
+				558036A5207E75D9001C0D31 /* EventDetailsViewController.swift in Sources */,
 				55C6BFEC20321BA1009290ED /* eventCell.swift in Sources */,
 				55C6BFEA202FD761009290ED /* CalendarEvents.swift in Sources */,
 				55C6BFE1202EA1AE009290ED /* CustomCell.swift in Sources */,
@@ -618,6 +628,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -625,6 +636,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -675,6 +687,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -682,6 +695,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

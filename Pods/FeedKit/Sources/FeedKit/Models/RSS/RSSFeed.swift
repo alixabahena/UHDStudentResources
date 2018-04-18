@@ -250,7 +250,6 @@ public class RSSFeed {
     /// See https://help.apple.com/itc/podcasts_connect/#/itcb54353390
     public var iTunes: ITunesNamespace?
     
-    
 }
 
 // MARK: - Equatable
@@ -281,6 +280,7 @@ extension RSSFeed: Equatable {
             lhs.title == rhs.title &&
             lhs.ttl == rhs.ttl &&
             lhs.webMaster == rhs.webMaster
+        
     }
     
 }

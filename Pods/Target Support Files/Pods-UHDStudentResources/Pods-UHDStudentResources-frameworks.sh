@@ -134,6 +134,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FrostedSidebar/FrostedSidebar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework"
@@ -147,6 +148,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ExpandableCell/ExpandableCell.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/FrostedSidebar/FrostedSidebar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework"

@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        //weather view
+        //weather view Customizations - Not Implemented
         //        weatherView.layer.shadowColor = UIColor.lightGray.cgColor
         //        weatherView.layer.shadowOpacity = 1
         //        weatherView.layer.shadowOffset = CGSize.zero

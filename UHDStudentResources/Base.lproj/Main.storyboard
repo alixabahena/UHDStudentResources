@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSQ-rh-FVr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSQ-rh-FVr">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,10 +15,6 @@
     <customFonts key="customFonts">
         <array key="Climacons.ttf">
             <string>Climacons-Font</string>
-        </array>
-        <array key="Futura.ttc">
-            <string>Futura-Bold</string>
-            <string>Futura-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -64,7 +60,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-26-jPo">
-                                <rect key="frame" x="88" y="654" width="200" height="40"/>
+                                <rect key="frame" x="87.666666666666686" y="654" width="200" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8v-cE-qco">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
@@ -77,7 +73,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgo-oJ-9Vc">
-                                        <rect key="frame" x="55" y="0.0" width="35" height="40"/>
+                                        <rect key="frame" x="54.999999999999986" y="0.0" width="35" height="40"/>
                                         <color key="tintColor" red="0.035294117647058823" green="0.1803921568627451" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" backgroundImage="008-twitter">
                                             <color key="titleShadowColor" red="0.035294117647058823" green="0.1803921568627451" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,7 +83,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve2-H8-TO8">
-                                        <rect key="frame" x="110" y="0.0" width="35" height="40"/>
+                                        <rect key="frame" x="109.99999999999999" y="0.0" width="35.000000000000014" height="40"/>
                                         <color key="tintColor" red="0.035294117647058823" green="0.1803921568627451" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" backgroundImage="006-youtube">
                                             <color key="titleShadowColor" red="0.035294117647058823" green="0.1803921568627451" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -297,6 +293,9 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <state key="normal" title="Resources">
                                             <color key="titleColor" red="0.060523279011249542" green="0.17933514714241028" blue="0.41178834438323975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3Rd-r7-7Fy" kind="show" animates="NO" id="oWV-Xm-gEX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LJ-VP-SMc" customClass="JTImageButton">
                                         <rect key="frame" x="0.0" y="581" width="343" height="89"/>
@@ -497,7 +496,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpb-QA-Auh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="377.58620689655174"/>
+            <point key="canvasLocation" x="1145" y="692"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="knc-hT-89b">
@@ -554,7 +553,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWx-jT-XXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3561" y="20"/>
+            <point key="canvasLocation" x="2167" y="692"/>
         </scene>
         <!--Campus Map View-->
         <scene sceneID="yOa-lP-TaB">
@@ -610,7 +609,235 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-xj-x6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524" y="-831"/>
+            <point key="canvasLocation" x="3276" y="-899"/>
+        </scene>
+        <!--Event Details View Controller-->
+        <scene sceneID="q6h-qq-pG2">
+            <objects>
+                <viewController id="Qrj-Di-ZAJ" customClass="EventDetailsViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHe-Ql-yIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBP-3A-MuX">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textShadowColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Event Details" id="xMX-kD-fCQ">
+                                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="Rs0-WE-JV4">
+                                            <connections>
+                                                <action selector="dismissButtonClicked:" destination="Qrj-Di-ZAJ" id="iDV-jg-eMx"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOb-9Z-aQQ">
+                                <rect key="frame" x="100" y="131" width="275" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-xH-Cnk">
+                                <rect key="frame" x="100" y="190" width="275" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-ZB-agi">
+                                <rect key="frame" x="100" y="248" width="275" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="2Kz-gz-5iq">
+                                <rect key="frame" x="16" y="394" width="343" height="372"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia7-G3-8fc">
+                                <rect key="frame" x="0.0" y="183" width="375" height="1"/>
+                                <color key="backgroundColor" name="UHDRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hhc-BP-J9M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-4T-5z7">
+                                <rect key="frame" x="0.0" y="240" width="375" height="1"/>
+                                <color key="backgroundColor" name="UHDRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GB8-Of-Bms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epg-5n-Cq2">
+                                <rect key="frame" x="0.0" y="298" width="375" height="1"/>
+                                <color key="backgroundColor" name="UHDRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="v5w-lN-9Ij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" image="016-megaphone" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-cy-qPK">
+                                <rect key="frame" x="0.0" y="135" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="L6n-IQ-Elh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" image="007-time-1" translatesAutoresizingMaskIntoConstraints="NO" id="MnI-fV-s4T">
+                                <rect key="frame" x="0.0" y="194" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2eb-9y-ggQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="011-clock" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-q7-Zib">
+                                <rect key="frame" x="0.0" y="252" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5HR-QU-DmG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="internet" translatesAutoresizingMaskIntoConstraints="NO" id="YFY-RY-aVZ">
+                                <rect key="frame" x="0.0" y="311" width="109" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="t22-Aq-gw3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Link" translatesAutoresizingMaskIntoConstraints="NO" id="lRP-Gb-a8g">
+                                <rect key="frame" x="100" y="307" width="275" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="UHDBlue"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" textContentType="url"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2y-0F-gkU">
+                                <rect key="frame" x="0.0" y="354" width="375" height="1"/>
+                                <color key="backgroundColor" name="UHDRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="f6n-ob-FRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="top" secondItem="Ia7-G3-8fc" secondAttribute="bottom" constant="10" id="29P-gM-mDT"/>
+                            <constraint firstItem="epg-5n-Cq2" firstAttribute="trailing" secondItem="V8J-ZB-agi" secondAttribute="trailing" id="7X2-Ob-c4q"/>
+                            <constraint firstItem="epg-5n-Cq2" firstAttribute="top" secondItem="6MH-q7-Zib" secondAttribute="bottom" constant="11" id="7vH-HX-Avg"/>
+                            <constraint firstItem="YFY-RY-aVZ" firstAttribute="top" secondItem="V8J-ZB-agi" secondAttribute="bottom" constant="18" id="8Tt-2n-Fmi"/>
+                            <constraint firstItem="yBP-3A-MuX" firstAttribute="leading" secondItem="kHe-Ql-yIO" secondAttribute="leadingMargin" constant="-16" id="9iN-sp-y6L"/>
+                            <constraint firstItem="ekf-xH-Cnk" firstAttribute="leading" secondItem="V8J-ZB-agi" secondAttribute="leading" id="9mx-dR-nXY"/>
+                            <constraint firstItem="iOb-9Z-aQQ" firstAttribute="leading" secondItem="ekf-xH-Cnk" secondAttribute="leading" id="CCq-a7-uum"/>
+                            <constraint firstItem="epg-5n-Cq2" firstAttribute="leading" secondItem="6MH-q7-Zib" secondAttribute="leading" id="CQY-78-kmc"/>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="leading" secondItem="6MH-q7-Zib" secondAttribute="leading" id="HNh-BP-uyU"/>
+                            <constraint firstItem="Ia7-G3-8fc" firstAttribute="leading" secondItem="kHe-Ql-yIO" secondAttribute="leading" id="HRN-fX-RRi"/>
+                            <constraint firstItem="lRP-Gb-a8g" firstAttribute="top" secondItem="epg-5n-Cq2" secondAttribute="bottom" constant="8" symbolic="YES" id="Hps-ET-xSF"/>
+                            <constraint firstItem="6MH-q7-Zib" firstAttribute="trailing" secondItem="YFY-RY-aVZ" secondAttribute="trailing" id="JhE-zX-qWh"/>
+                            <constraint firstItem="S2y-0F-gkU" firstAttribute="top" secondItem="YFY-RY-aVZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Jyo-oE-Vt8"/>
+                            <constraint firstItem="iOb-9Z-aQQ" firstAttribute="trailing" secondItem="yBP-3A-MuX" secondAttribute="trailing" id="Mhd-48-MnA"/>
+                            <constraint firstItem="AGd-eN-mSZ" firstAttribute="trailing" secondItem="Leb-cy-qPK" secondAttribute="trailing" constant="266" id="QMH-mP-20e"/>
+                            <constraint firstItem="YXI-4T-5z7" firstAttribute="trailing" secondItem="ekf-xH-Cnk" secondAttribute="trailing" id="S8n-3M-avJ"/>
+                            <constraint firstItem="S2y-0F-gkU" firstAttribute="top" secondItem="lRP-Gb-a8g" secondAttribute="bottom" constant="8" symbolic="YES" id="SI1-q4-UZW"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="top" secondItem="yBP-3A-MuX" secondAttribute="bottom" constant="47" id="U4v-sd-Ktg"/>
+                            <constraint firstItem="lRP-Gb-a8g" firstAttribute="leading" secondItem="V8J-ZB-agi" secondAttribute="leading" id="VHo-i0-gR4"/>
+                            <constraint firstItem="YXI-4T-5z7" firstAttribute="top" secondItem="MnI-fV-s4T" secondAttribute="bottom" constant="11" id="W7d-1t-IGk"/>
+                            <constraint firstItem="6MH-q7-Zib" firstAttribute="top" secondItem="V8J-ZB-agi" secondAttribute="top" constant="4" id="WeI-pu-C81"/>
+                            <constraint firstItem="6MH-q7-Zib" firstAttribute="leading" secondItem="YFY-RY-aVZ" secondAttribute="leading" id="ZFU-Rc-HJz"/>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="top" secondItem="Leb-cy-qPK" secondAttribute="bottom" constant="24" id="Zdy-Lf-oa5"/>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="bottom" secondItem="ekf-xH-Cnk" secondAttribute="bottom" constant="-6" id="awu-R3-dPP"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="leading" secondItem="MnI-fV-s4T" secondAttribute="leading" id="bQc-MZ-VJU"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="bottom" secondItem="iOb-9Z-aQQ" secondAttribute="bottom" constant="-6" id="bu7-nr-qxC"/>
+                            <constraint firstItem="S2y-0F-gkU" firstAttribute="trailing" secondItem="epg-5n-Cq2" secondAttribute="trailing" id="d0w-SY-vMe"/>
+                            <constraint firstItem="S2y-0F-gkU" firstAttribute="trailing" secondItem="lRP-Gb-a8g" secondAttribute="trailing" id="dwG-fw-xYA"/>
+                            <constraint firstItem="AGd-eN-mSZ" firstAttribute="bottom" secondItem="2Kz-gz-5iq" secondAttribute="bottom" constant="12" id="gja-JA-KUw"/>
+                            <constraint firstItem="ekf-xH-Cnk" firstAttribute="trailing" secondItem="V8J-ZB-agi" secondAttribute="trailing" id="hw5-lz-qrV"/>
+                            <constraint firstItem="YXI-4T-5z7" firstAttribute="leading" secondItem="MnI-fV-s4T" secondAttribute="leading" id="iDp-tL-mQ3"/>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="trailing" secondItem="6MH-q7-Zib" secondAttribute="trailing" id="idt-kV-TY3"/>
+                            <constraint firstItem="yBP-3A-MuX" firstAttribute="top" secondItem="kHe-Ql-yIO" secondAttribute="topMargin" id="iim-4O-QrX"/>
+                            <constraint firstItem="iOb-9Z-aQQ" firstAttribute="leading" secondItem="AGd-eN-mSZ" secondAttribute="leading" constant="100" id="l0i-fi-GOS"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="trailing" secondItem="MnI-fV-s4T" secondAttribute="trailing" id="l69-pp-667"/>
+                            <constraint firstItem="2Kz-gz-5iq" firstAttribute="leading" secondItem="kHe-Ql-yIO" secondAttribute="leadingMargin" id="o0f-Vh-leq"/>
+                            <constraint firstItem="6MH-q7-Zib" firstAttribute="top" secondItem="MnI-fV-s4T" secondAttribute="bottom" constant="23" id="oXM-xS-iFI"/>
+                            <constraint firstItem="6MH-q7-Zib" firstAttribute="bottom" secondItem="V8J-ZB-agi" secondAttribute="bottom" constant="-6" id="pSx-3J-eMI"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="leading" secondItem="yBP-3A-MuX" secondAttribute="leading" id="qNM-cN-PZP"/>
+                            <constraint firstItem="MnI-fV-s4T" firstAttribute="top" secondItem="ekf-xH-Cnk" secondAttribute="top" constant="4" id="qyc-aW-p0t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBP-3A-MuX" secondAttribute="trailing" constant="-16" id="sts-BN-gsM"/>
+                            <constraint firstItem="iOb-9Z-aQQ" firstAttribute="trailing" secondItem="ekf-xH-Cnk" secondAttribute="trailing" id="syS-a0-k6L"/>
+                            <constraint firstItem="2Kz-gz-5iq" firstAttribute="top" secondItem="YFY-RY-aVZ" secondAttribute="bottom" constant="48" id="tTz-dE-3F3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ia7-G3-8fc" secondAttribute="trailing" id="yId-Qv-62K"/>
+                            <constraint firstItem="S2y-0F-gkU" firstAttribute="leading" secondItem="YFY-RY-aVZ" secondAttribute="leading" id="zQL-Th-wf9"/>
+                            <constraint firstItem="2Kz-gz-5iq" firstAttribute="centerX" secondItem="yBP-3A-MuX" secondAttribute="centerX" id="zU3-r0-ie0"/>
+                            <constraint firstItem="Leb-cy-qPK" firstAttribute="top" secondItem="iOb-9Z-aQQ" secondAttribute="top" constant="4" id="zr7-qc-SZu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AGd-eN-mSZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventDesc" destination="2Kz-gz-5iq" id="Zwe-5o-Vlj"/>
+                        <outlet property="eventHost" destination="lRP-Gb-a8g" id="Cew-RB-CRa"/>
+                        <outlet property="eventLocation" destination="ekf-xH-Cnk" id="cLV-1j-Fdj"/>
+                        <outlet property="eventName" destination="iOb-9Z-aQQ" id="bZA-9c-VmX"/>
+                        <outlet property="eventTime" destination="V8J-ZB-agi" id="e41-Z2-2Ap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p8-Mn-O0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2165.5999999999999" y="-1252.4630541871923"/>
+        </scene>
+        <!--Resource View Controller-->
+        <scene sceneID="17k-HS-1fe">
+            <objects>
+                <viewController id="3Rd-r7-7Fy" customClass="ResourceViewController" customModule="UHDStudentResources" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VV6-aM-2gc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvP-th-q5M">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textShadowColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Resources" id="ALJ-VV-5H5">
+                                        <barButtonItem key="leftBarButtonItem" image="Hamburger_icon.svg" id="fsh-Ne-nFQ">
+                                            <color key="tintColor" red="0.06052327901" green="0.17933514710000001" blue="0.41178834440000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <segue destination="Weu-Cy-7al" kind="presentation" id="aMx-pA-HgO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yqq-f8-3r1">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BXJ-n6-cci"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycH-mJ-Fcc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4167" y="-273"/>
         </scene>
         <!--Bus Routes View Controller-->
         <scene sceneID="Dta-J5-XbB">
@@ -666,7 +893,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9F-xW-Cy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="-363"/>
+            <point key="canvasLocation" x="3276" y="372"/>
         </scene>
         <!--Ib Calendar Data Source-->
         <scene sceneID="ckI-TS-eEq">
@@ -677,7 +904,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKx-dM-qWA">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="20"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                     <color key="textColor" red="0.060523279011249542" green="0.17933514714241028" blue="0.41178834438323975" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -695,7 +922,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7qn-MU-Tqs">
-                                <rect key="frame" x="8" y="138" width="359" height="422"/>
+                                <rect key="frame" x="8" y="114" width="359" height="418"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kZ7-DZ-h4m">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="22.333333333333332"/>
@@ -745,7 +972,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         </subviews>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wzE-Ml-p5k" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                        <rect key="frame" x="0.0" y="22.333333333333343" width="359" height="399.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="22.333333333333343" width="359" height="395.66666666666663"/>
                                         <color key="backgroundColor" name="Color"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Sfz-oN-clG">
                                             <size key="itemSize" width="126" height="110"/>
@@ -818,19 +1045,33 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-gN-8Um">
-                                <rect key="frame" x="8" y="510" width="359" height="282"/>
+                                <rect key="frame" x="8" y="532" width="359" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="LFg-dl-Fa9">
                                     <rect key="frame" x="0.0" y="72" width="359" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Events Scheduled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-1e-3cn">
-                                            <rect key="frame" x="8" y="30" width="343" height="44"/>
+                                            <rect key="frame" x="8" y="-7" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-py-2Me" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                            <rect key="frame" x="0.0" y="-158" width="359" height="443.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                    <color key="value" red="0.69102662800000003" green="0.222481966" blue="0.2862618864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -871,12 +1112,13 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                         <connections>
                                             <outlet property="dateLabel" destination="1b1-3Y-yg1" id="01D-Hd-Wxa"/>
                                             <outlet property="titleLabel" destination="40v-Ff-kEV" id="zkY-qH-pSE"/>
+                                            <segue destination="Qrj-Di-ZAJ" kind="showDetail" identifier="eventDetail" id="Nni-hH-BbC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TUf-2L-H9y">
-                                <rect key="frame" x="8" y="88" width="359" height="42"/>
+                                <rect key="frame" x="8" y="64" width="359" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yac-r0-Wz7">
                                         <rect key="frame" x="0.0" y="8.6666666666666714" width="174.66666666666666" height="25"/>
@@ -892,20 +1134,6 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-py-2Me" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="60" y="568" width="255" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.69102662800000003" green="0.222481966" blue="0.2862618864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -915,13 +1143,13 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                             <constraint firstItem="7qn-MU-Tqs" firstAttribute="centerX" secondItem="Hvp-iV-96I" secondAttribute="centerX" id="O88-Q5-fSX"/>
                             <constraint firstItem="RYg-Ub-qMW" firstAttribute="trailing" secondItem="TUf-2L-H9y" secondAttribute="trailing" constant="8" id="T0T-fK-cXc"/>
                             <constraint firstItem="TUf-2L-H9y" firstAttribute="centerX" secondItem="Hvp-iV-96I" secondAttribute="centerX" id="TzR-7o-cdU"/>
-                            <constraint firstItem="5hE-gN-8Um" firstAttribute="top" secondItem="7qn-MU-Tqs" secondAttribute="bottom" constant="-50" id="UMd-UQ-92x"/>
+                            <constraint firstItem="5hE-gN-8Um" firstAttribute="top" secondItem="7qn-MU-Tqs" secondAttribute="bottom" id="UMd-UQ-92x"/>
                             <constraint firstItem="7qn-MU-Tqs" firstAttribute="leading" secondItem="5hE-gN-8Um" secondAttribute="leading" id="Xf5-8l-gph"/>
                             <constraint firstItem="7qn-MU-Tqs" firstAttribute="top" secondItem="sKx-dM-qWA" secondAttribute="bottom" constant="50" id="bf6-4N-EBH"/>
                             <constraint firstItem="7qn-MU-Tqs" firstAttribute="leading" secondItem="RYg-Ub-qMW" secondAttribute="leading" constant="8" id="cAi-4Y-TPr"/>
                             <constraint firstItem="TUf-2L-H9y" firstAttribute="leading" secondItem="RYg-Ub-qMW" secondAttribute="leading" constant="8" id="dle-Av-13X"/>
                             <constraint firstItem="sKx-dM-qWA" firstAttribute="top" secondItem="RYg-Ub-qMW" secondAttribute="top" id="eCp-5O-Hlu"/>
-                            <constraint firstAttribute="bottom" secondItem="7qn-MU-Tqs" secondAttribute="bottom" constant="252" id="era-9u-iO0"/>
+                            <constraint firstAttribute="bottom" secondItem="7qn-MU-Tqs" secondAttribute="bottom" constant="280" id="era-9u-iO0"/>
                             <constraint firstItem="RYg-Ub-qMW" firstAttribute="trailing" secondItem="7qn-MU-Tqs" secondAttribute="trailing" constant="8" id="gSw-hF-QT7"/>
                             <constraint firstItem="sKx-dM-qWA" firstAttribute="trailing" secondItem="RYg-Ub-qMW" secondAttribute="trailing" id="idY-TS-ly4"/>
                             <constraint firstAttribute="bottom" secondItem="5hE-gN-8Um" secondAttribute="bottom" constant="20" symbolic="YES" id="jvz-55-FG8"/>
@@ -941,7 +1169,7 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ON-Yv-M7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2452" y="-1111.3300492610838"/>
+            <point key="canvasLocation" x="1144.8" y="-1252.4630541871923"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39m-lU-dZZ">
@@ -967,19 +1195,26 @@ From the day our doors opened more than 40 years ago, UHD has expanded to serve 
     <resources>
         <image name="006-youtube" width="512" height="512"/>
         <image name="007-linkedin" width="512" height="512"/>
+        <image name="007-time-1" width="512" height="512"/>
         <image name="008-twitter" width="512" height="512"/>
         <image name="009-facebook" width="512" height="512"/>
+        <image name="011-clock" width="512" height="512"/>
+        <image name="016-megaphone" width="512" height="512"/>
         <image name="Hamburger_icon.svg" width="32" height="32"/>
+        <image name="internet" width="512" height="512"/>
         <image name="logo" width="750" height="430"/>
         <namedColor name="Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UHDBlue">
+            <color red="0.035000000149011612" green="0.18000000715255737" blue="0.4309999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UHDRed">
             <color red="0.77600002288818359" green="0.054999999701976776" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="brv-aT-WA4"/>
+        <segue reference="CDa-hY-HCd"/>
         <segue reference="kJQ-se-Q7l"/>
     </inferredMetricsTieBreakers>
 </document>

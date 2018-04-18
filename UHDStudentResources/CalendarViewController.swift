@@ -33,13 +33,13 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     func dayEvents()
     {
         
-        
         todaysEvents = events.filter{calendar.isDate(($0.pubDate as Date), inSameDayAs: selectedDate)}
     }
   
     
     override func viewWillAppear(_ animated: Bool) {
-       
+        //let size = CGSize(width: 30, height: 30)
+        //self.startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
     }
     
     override func viewDidLoad() {
@@ -58,8 +58,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.backgroundView = noItemsView
         
-       // let size = CGSize(width: 30, height: 30)
-       //self.startAnimating(size, message: "Loading Events", type: NVActivityIndicatorType.lineScale )
+       
          activityIndicatorView.startAnimating()
         NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
       
@@ -79,6 +78,20 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         activityIndicatorView.stopAnimating()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  segue.identifier == "eventDetail",
+            let destination = segue.destination as? EventDetailsViewController,
+            let tableIndex = tableView.indexPathForSelectedRow?.row
+        {
+            destination.name = todaysEvents[tableIndex].title
+            //formatter.dateFormat = "EEEE, MMMM d, yyyy h:mm a"
+           // let eventDate = formatter.string(from: todaysEvents[tableIndex].pubDate)
+            destination.time = todaysEvents[tableIndex].starttime + "-" + todaysEvents[tableIndex].endtime
+            destination.desc = todaysEvents[tableIndex].descriptions
+            destination.location = todaysEvents[tableIndex].category
+            destination.host = todaysEvents[tableIndex].link
+        }
+    }
     
      func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -108,11 +121,9 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
         {
             
         }
-        
             return cell
         
     }
-    
     
     
     func setupCalendarView() {

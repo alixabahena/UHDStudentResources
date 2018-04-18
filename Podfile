@@ -15,6 +15,7 @@ target 'UHDStudentResources' do
     pod 'Jupiter'
     pod 'LUExpandableTableView'
     pod 'NVActivityIndicatorView'
+    pod 'ExpandableCell'
 
 
   target 'UHDStudentResourcesTests' do
