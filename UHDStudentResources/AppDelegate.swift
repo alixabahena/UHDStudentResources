@@ -29,8 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 //print("Finished loading \(self.events.count) events")
                 myGroup.notify(queue: .main) {
                     
-                    print("Finished loading \(self.events.count) events")
+                   // print("Finished loading \(self.events.count) events")
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+                    
                 }
             }
         }

@@ -32,10 +32,16 @@ class EventDetailsViewController: UIViewController {
         eventTime.text = time
         eventHost.text = host
         eventDesc.text = desc
+        
+        eventHost.isScrollEnabled = false
+        eventHost.isScrollEnabled = true
+        eventHost.sizeToFit()
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 }
 

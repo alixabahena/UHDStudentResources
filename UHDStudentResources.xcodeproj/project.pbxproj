@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5502E8CD20472177005F039D /* CampusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CC20472177005F039D /* CampusMapView.swift */; };
 		5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5502E8CE204726AF005F039D /* RoundedButton.swift */; };
+		551A4668208906EC0065BDFD /* DiningServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A4667208906EC0065BDFD /* DiningServicesViewController.swift */; };
+		551A466A208906FC0065BDFD /* BookstoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A4669208906FC0065BDFD /* BookstoreViewController.swift */; };
 		55421CDD206B406B00E06388 /* UHDCalendar.rss in Resources */ = {isa = PBXBuildFile; fileRef = 55421CDC206B406A00E06388 /* UHDCalendar.rss */; };
 		55421CDF206C134B00E06388 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55421CDE206C134B00E06388 /* FAQViewController.swift */; };
 		5570AF57206996CD00C30B07 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5570AF56206996CC00C30B07 /* awsconfiguration.json */; };
@@ -58,6 +60,8 @@
 		3A8E8812A8BC720C0AD1A0AA /* Pods_UHDStudentResourcesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHDStudentResourcesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5502E8CC20472177005F039D /* CampusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapView.swift; sourceTree = "<group>"; };
 		5502E8CE204726AF005F039D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		551A4667208906EC0065BDFD /* DiningServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningServicesViewController.swift; sourceTree = "<group>"; };
+		551A4669208906FC0065BDFD /* BookstoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookstoreViewController.swift; sourceTree = "<group>"; };
 		55421CDC206B406A00E06388 /* UHDCalendar.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UHDCalendar.rss; sourceTree = "<group>"; };
 		55421CDE206C134B00E06388 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		5570AF56206996CC00C30B07 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				55421CDE206C134B00E06388 /* FAQViewController.swift */,
 				558036A2207E7496001C0D31 /* ResourceViewController.swift */,
 				558036A4207E75D9001C0D31 /* EventDetailsViewController.swift */,
+				551A4667208906EC0065BDFD /* DiningServicesViewController.swift */,
+				551A4669208906FC0065BDFD /* BookstoreViewController.swift */,
 			);
 			path = UHDStudentResources;
 			sourceTree = "<group>";
@@ -558,8 +564,10 @@
 				5502E8CF204726AF005F039D /* RoundedButton.swift in Sources */,
 				55C6BFE7202EA1AE009290ED /* MenuViewController.swift in Sources */,
 				55C6BFAA202E8731009290ED /* AppDelegate.swift in Sources */,
+				551A4668208906EC0065BDFD /* DiningServicesViewController.swift in Sources */,
 				55C6BFE3202EA1AE009290ED /* EservicesViewController.swift in Sources */,
 				55C6BFE2202EA1AE009290ED /* BusRoutesViewController.swift in Sources */,
+				551A466A208906FC0065BDFD /* BookstoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
