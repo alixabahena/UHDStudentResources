@@ -90,6 +90,7 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
             destination.desc = todaysEvents[tableIndex].descriptions
             destination.location = todaysEvents[tableIndex].category
             destination.host = todaysEvents[tableIndex].link
+            destination.date = todaysEvents[tableIndex].pubDate
         }
     }
     
@@ -176,7 +177,15 @@ class CalendarViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func handleCellEvents(view: JTAppleCell?, cellState: CellState) {
+         guard let validCell = view as? CustomCell else { return }
+        var dateExist = true
         
+        if (events.filter{calendar.isDate(($0.pubDate as Date), inSameDayAs: cellState.date)}.count != 0)
+        {
+            dateExist = false
+        }
+        
+        validCell.eventDotView.isHidden = dateExist
         
     }
     
@@ -225,7 +234,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
-        
+        handleCellEvents(view: cell, cellState: cellState)
         return cell
     }
     
@@ -233,6 +242,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         selectedDate = date
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
+        handleCellEvents(view: cell, cellState: cellState)
         cell?.bounce()
         dayEvents()
         tableView.reloadData()

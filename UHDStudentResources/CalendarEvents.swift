@@ -9,8 +9,6 @@
 import UIKit
 import FeedKit
 
-
-
 class CalendarEvents: NSObject {
     
     var title: String
@@ -48,4 +46,9 @@ class CalendarEvents: NSObject {
         self.starttime = starttime
         self.endtime = endtime
     }
+    
+//        static func == (lhs: CalendarEvents, rhs: CalendarEvents) -> Bool {
+//            return lhs.pubDate == rhs.pubDate
+//        }
+    
 }
