@@ -6,22 +6,9 @@ Why create this iOS application? Because there are resources available to studen
 I work in IT at UHD, and I know that most students have questions about topics or services that could be easily provided inside of an application. Additionally, I have experience in creating mobile applications from the Mobile Computing class I took last semester.
 
 ## Screenshots
-Main Screen
-![Main Screen](http://i.cubeupload.com/EUuU8G.png)
-Splash Screen (Launch Screen)
-![Splash Screen](http://i.cubeupload.com/XRis7G.png)
-Full Services Menu
-![Full Services Menu](http://i.cubeupload.com/dcf9Rn.png)
-E-services Links
-![Eservices Links](http://i.cubeupload.com/TuFTrj.png)
-Event Calendar
-![Event Calendar](http://i.cubeupload.com/Vi0eVa.png)
-Event Calendar Detail
-![Event Calendar Detail](http://i.cubeupload.com/RUEHQv.png)
-Campus Map
-![Campus Map](http://i.cubeupload.com/9CQOxf.png)
-Live Bus Routes
-![Live Bus Routes](http://i.cubeupload.com/USp1mW.png)
+#### Main Screen
+
+!(http://i.cubeupload.com/EUuU8G.png)
 
 ## Features
 After a long semester of working on this project, here are the services it offers to students:
