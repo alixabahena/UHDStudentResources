@@ -7,8 +7,30 @@ I work in IT at UHD, and I know that most students have questions about topics o
 
 ## Screenshots
 #### Main Screen
+<img src="http://i.cubeupload.com/EUuU8G.png" height="500">
 
-!(http://i.cubeupload.com/EUuU8G.png)
+#### Splash Screen
+<img src="http://i.cubeupload.com/XRis7G.png" height="500">
+
+#### Full Services Menu
+<img src="http://i.cubeupload.com/dcf9Rn.png" height="500">
+
+#### E-Services Links
+<img src="http://i.cubeupload.com/TuFTrj.png" height="500">
+
+#### Event Calendar
+<img src="http://i.cubeupload.com/Vi0eVa.png" height="500">
+
+#### Calendar Event Detail
+<img src="http://i.cubeupload.com/RUEHQv.png" height="500">
+
+#### Campus Map
+<img src="http://i.cubeupload.com/9CQOxf.png" height="500">
+
+#### Live Bus Routes
+<img src="http://i.cubeupload.com/USp1mW.png" height="500">
+
+
 
 ## Features
 After a long semester of working on this project, here are the services it offers to students:
